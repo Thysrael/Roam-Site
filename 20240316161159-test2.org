@@ -2,6 +2,7 @@
 :ID:       185e116e-8184-40cd-a7a1-ae593a861dd1
 :END:
 #+title: test2
+#+filetags: :linux:read:
 
 This is another test.
 

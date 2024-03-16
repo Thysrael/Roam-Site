@@ -2,4 +2,7 @@
 :ID:       00feefa6-c4c1-4516-85ab-f85d91167f5c
 :END:
 #+title: test3
+#+filetags: :blog:
+
 [[id:185e116e-8184-40cd-a7a1-ae593a861dd1][test2]]
+[[id:300aecfc-f87d-48d4-92a9-a4079577d212][test4]]
