@@ -25,7 +25,7 @@ This is another test.
 
 * Math
 
-\(\LaTeX \labmda \)
+\(\LaTeX \lamda \)
 
 * Code
 
@@ -42,7 +42,7 @@ This is another test.
   1. item 3-1
   2. item 3-2
 
-** Image
+* Image
 
 #+DOWNLOADED: screenshot @ 2024-03-16 16:20:14
 [[file:img/2024-03-16_16-20-14_screenshot.png]]
