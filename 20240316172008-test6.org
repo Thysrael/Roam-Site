@@ -4,8 +4,5 @@
 #+title: test6
 
 难道不能只有 link 吗？
-
-
 [[id:00feefa6-c4c1-4516-85ab-f85d91167f5c][test3]]
-[[id:3613ec07-6dd6-4fd6-a5c4-c5113d04b5db][test5]]
 
