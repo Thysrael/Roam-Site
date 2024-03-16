@@ -2,4 +2,7 @@
 :ID:       3613ec07-6dd6-4fd6-a5c4-c5113d04b5db
 :END:
 #+title: test5
+
+难道不能只有 link 吗？
+
 [[id:300aecfc-f87d-48d4-92a9-a4079577d212][test4]]
