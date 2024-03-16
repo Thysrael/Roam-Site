@@ -4,14 +4,10 @@ on:
     branches:
       - main
 jobs:
-  job_id:
-    # Add "id-token" with the intended permissions.
-    permissions:
-      contents: 'read'
-      id-token: 'write'
-      
   main:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
     steps:
       - name: Generate org-roam-ui page
         uses: ikoamu/org-roam-ui-hosting@main
