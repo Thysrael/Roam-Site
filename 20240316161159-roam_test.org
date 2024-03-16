@@ -1,12 +1,11 @@
 :PROPERTIES:
 :ID:       185e116e-8184-40cd-a7a1-ae593a861dd1
 :END:
-#+title: test2
-#+filetags: :linux:read:
+#+title: roam-test
 
-This is another test.
+This is ~org-roam-ui~ rendering test.
 
-* headline 1
+* Headline
 ** headlien 2
 *** headline 3
 * Chinese
@@ -29,8 +28,14 @@ This is another test.
 
 * Code
 
-#+begin_src python
-  print("Hello, world!")
+#+begin_src c
+  #include <stdio.h>
+
+  int main()
+  {
+  	printf("Hello, world.");
+  	return 0;
+  }
 #+end_src
 
 * List
@@ -47,5 +52,6 @@ This is another test.
 #+DOWNLOADED: screenshot @ 2024-03-16 16:20:14
 [[file:img/2024-03-16_16-20-14_screenshot.png]]
 
-* Link
-[[id:0ee9cb27-6dd9-48c1-b9ec-bc4fb9ee6373][test1]]
+* Emphasize
+
+*This* /is/ _a_ =emphasize= +test+.

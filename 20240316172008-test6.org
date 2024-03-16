@@ -1,8 +1,0 @@
-:PROPERTIES:
-:ID:       3e22aef7-5cf7-40f4-b82f-405a2e0be91f
-:END:
-#+title: test6
-
-难道不能只有 link 吗？
-[[id:00feefa6-c4c1-4516-85ab-f85d91167f5c][test3]]
-

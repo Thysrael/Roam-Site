@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       7cda048b-2bde-44fc-bb4e-0a97804e7e64
-:END:
-#+title: test5
-
-hi
