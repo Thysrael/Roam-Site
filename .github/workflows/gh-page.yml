@@ -15,4 +15,4 @@ jobs:
         with:
           org-roam-db-filename: org-roam.db
           deploy-to-pages: true
-          site-title: my org-roam!
+          site-title: thysrael-roam
