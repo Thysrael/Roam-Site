@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       a211d19f-1479-4a3d-8dc5-151f677204f3
 :END:
-#+title: git trick
+#+title: Git Trick
 
 这里记录了一些 ~git~ 的实践技巧。
 
