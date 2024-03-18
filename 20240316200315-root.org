@@ -17,6 +17,7 @@ Call me /ROOT/!
 - Emacs: [[id:7ba3aeb8-f711-4fc8-aac6-5ef4fb647011][Emacs]] 
 - Unix: [[id:2b0578d1-ed79-4fd4-838c-672dcc151b6e][Unix]]
 - 方法论：[[id:faa09ef8-bc14-4f41-a501-0cc81318b884][方法论]]
+- 编程语言：[[id:69d4cd84-7669-4ceb-86df-b21456cc7128][Language]]
 
 
 #+DOWNLOADED: screenshot @ 2024-03-16 20:05:18
