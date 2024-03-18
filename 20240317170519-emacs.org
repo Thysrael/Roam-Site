@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       32d1f176-15f8-4771-8ecb-c91df968d23a
-:END:
-#+title: Emacs
-

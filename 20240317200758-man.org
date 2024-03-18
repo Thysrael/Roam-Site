@@ -59,3 +59,6 @@
   apropos read
 #+end_src
 
+* 操作方式
+~man~ 使用 [[id:8ab7941b-754f-425c-95f7-77e45f8acacb][Less]] 作为分页器，所以操作方式就是 ~less~ 的操作方式。
+
