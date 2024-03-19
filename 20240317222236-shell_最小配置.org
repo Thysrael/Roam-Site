@@ -141,12 +141,13 @@
   PROMPT_COMMAND=thy_prompt
 #+end_src
 
-* Colorful Ls
+* Colorful Commands
 主要利用了 ~--color=auto~ 这个选项
 
 #+begin_src shell
   alias ls="ls --color=auto"
   alias ll="ls --color=auto -al"
+  alias grep="grep --color=auto"
 #+end_src
 
 * Alias

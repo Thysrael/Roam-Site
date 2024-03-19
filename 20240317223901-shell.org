@@ -3,3 +3,4 @@
 :END:
 #+title: Shell
 
+- [[id:04dd9094-4e40-47b8-b7c4-034a2328c99a][Shell 快捷键]]
