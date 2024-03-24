@@ -164,7 +164,7 @@
   alias gl="git log --graph --pretty=oneline"
 
   # tar
-  alias targz-"tar -zcvf"
+  alias targz="tar -zcvf"
   alias tarlgz="tar -ztvf"
   alias tarugz="tar -zxvf"
 #+end_src
