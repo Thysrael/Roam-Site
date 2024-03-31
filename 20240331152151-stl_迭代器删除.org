@@ -84,13 +84,14 @@ void removeElements(Container& container, const typename Container::value_type& 
         {
 			// it 正常递增即可
             container.erase(it++);
-			// 但是不能写成如下情况，不知道为啥
+			// 但是不能写成如下情况
+			// 前 ++ 返回引用，后 ++ 返回一个临时对象
 			// container.erase(it);
 			// it++;
         }
         else
         {
-            it++;
+            ++it;
         }
     }
 }
@@ -284,7 +285,7 @@ void removeElements(Container& container)
         if (predicate(*it))
             it = container.erase(it);
         else
-            it++;
+            ++it;
     }
 }
 #+end_src
