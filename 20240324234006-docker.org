@@ -84,3 +84,9 @@
   # 添加访问和执行权限
   sudo chmod a+rw /var/run/docker.sock
 #+end_src
+
+* 核心原理
+
+- 利用 [[id:dc0fa854-6826-4b9d-9f6e-f70f16db8f32][Linux Namespace]] 隔离资源
+- 利用 [[id:d5e96e08-d27e-4166-9566-02a623f387af][CGroups]] 限制资源的使用
+- 利用 [[id:0e30c122-9c10-4ee3-9cd3-1831732d59cb][Chroot]] 改变进程的根目录到指定的目录
