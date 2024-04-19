@@ -44,6 +44,7 @@ TCR(Translation Config Register) 是翻译过程的配置寄存器，他是一�
 
 - ~TGx~: Translation Granule ， ~TG1~ 和 ~TG0~ 字段分别给出高地址区和低地址区的颗粒大小， =00=4KB, 01=16KB, 11=64KB=
 - ~TxSZ~: 高地址区和低地址空间的大小是 \(2^{64-TxSZ}\) ，之所以有一个减法的设置，是一种抹除高地址的运算，比如 ~TxSZ~ 取 =25= ，那么 MMU 就会忽略一个地址的高 25 位，也就是 =[63:39]= 。
+- ~TBI~: Top Byte Ignored, 与高地址的全 1 和全 0 有关
 
 其他的域可以在官方[[https://developer.arm.com/documentation/ddi0601/2024-03/AArch64-Registers/TCR-EL1--Translation-Control-Register--EL1-][文档]]中找到。 
 

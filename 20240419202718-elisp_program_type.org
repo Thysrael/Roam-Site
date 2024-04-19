@@ -1,0 +1,56 @@
+:PROPERTIES:
+:ID:       85a065c7-7dd9-4e5a-8b7a-4979994d2ff5
+:END:
+#+title: Elisp Program Type
+
+* Print and Read
+对于 Elisp 这种解释型语言，打印和读取不再是像 [[id:a209fbd7-ef3d-4796-895a-c080dd44190e][C]] 语言那种单纯的 ~printf, scanf~ 。Elisp 中的 =read= 指的是 elisp 解释器读入 elisp 代码并解析的过程，而 =print= 则指的是 elisp 中的 object 以一种自省的方式打印自身信息的过程。
+
+并不是所有的对象都是可以读入的，但是所有对象都可以输出。不可读入的对象会以“哈希表示法（hash notation）”来表示，它以 ~#<~ 开头，以 ~>~ 结尾，中间是描述性字符串，如下所示：
+
+#+begin_src emacs-lisp
+#<buffer objects.texi>
+#+end_src
+
+* Number
+数字大致可以分为 3 类：整数，浮点数和字符。
+
+整数可以用多种进制表达，其中对于非十进制数，需要用 ~#~ 为开头来表示特殊进制，同时可以用 ~#<n>r~ 来指定 ~n~ 进制：
+
+#+begin_src emacs-lisp
+44        ; 10 进制
+#b101100  ; 2 进制
+#o54      ; 8 进制
+#x2c      ; 16 进制
+#24r1k    ; 24 进制
+#+end_src
+
+对于浮点数，可以使用科学计数法表示， ~1500.0, 15e2, 15.0e2, 1.5e3~ 和 ~.15e4~ 都可以用来表示一个浮点数 ~1500.~ 。遵循 IEEE 标准，elisp 也有一个特殊类型的值称为 ~NaN~ (not-a-number)。
+
+对于字符，其本质是整数，只是 =read= 形式不同，需要以 ~?~ 开头，如下所示：
+
+#+begin_src emacs-lisp
+?A    ; => 65
+?a    ; => 97
+#+end_src
+
+控制字符可以有多种表示方式，比如 ~C-i~ ，这些都是对的：
+
+#+begin_src emacs-lisp
+?\^I  ?\^i  ?\C-I  ?\C-i 
+#+end_src
+
+他们都是整数 ~9~ 。
+
+* Array
+Elisp 里的 array 包括 string、vector 、char-table 和 bool vector 。
+
+vector 有如下示例：
+
+#+begin_src emacs-lisp
+(setq my-vector [1 2 3]) ; 使用方括号创建向量
+(aref my-vector 0) ; 使用 aref 函数通过索引访问向量元素
+(aset my-vector 1 5) ; 使用 aset 函数通过索引更新向量元素
+(length my-vector) ; 使用 length 函数获取向量的长度
+(mapcar #'(lambda (x) (* x 2)) my-vector) ; 使用 mapcar 函数遍历向量
+#+end_src
