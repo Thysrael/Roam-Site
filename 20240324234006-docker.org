@@ -35,6 +35,18 @@
 #+end_src
 
 ** Container
+列出容器
+
+#+begin_src shell
+docker ps
+#+end_src
+
+检查某个容器的具体信息
+
+#+begin_src shell
+docker inspect <CONTAINER>
+#+end_src
+
 执行命令/进入容器
 
 #+begin_src shell
@@ -63,6 +75,12 @@
 #+begin_src shell
   docker export <CONTAINER> -o <name>.tar
   docker import <name>.tar - <Container Name>
+#+end_src
+
+删除容器：
+
+#+begin_src shell
+docker rm <CONTAINER>
 #+end_src
 
 * 权限
