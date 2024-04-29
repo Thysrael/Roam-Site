@@ -22,5 +22,21 @@ pandoc input_file -o output_file
 可以用 ~--extract-media=<dir_name>~ 的形式来识别输入文档中的图片资源，并将其放在固定文件夹内。
 
 * 标题等级修改
-因为 markdown 的一级 heading 被用作 title ，所以
+因为 markdown 的一级 heading 被用作 title ，所以它的二级 heading 才应该是别的文档的一级 heading ，pandoc 针对这种情况提供了 ~--shift-heading-level-by=-1~ 来完成 md2org 的转变，相应的，如果是 org2md ，那么则需要 ~--shift-heading-level-by=1~ 进行转变。
+
 * 保留换行
+一些不规范的 markdown 两段之间并没有空行（仅有换行），这会导致 pandoc 将其识别为一段导致错误，可以使用 ~-wrap=preserve~ 来保留换行。
+
+* 输出 org 时的 drawer
+pandoc 生成 [[id:b64bb67b-b0a5-4e1b-8d23-7c33ed0e9ec2][Org-mode]] 文件时，会增加 ~properties~ drawer, 可以使用如下方法去除，首先创建一个 lua 过滤器：
+
+#+begin_src lua
+function Header (header)
+  return pandoc.Header(header.level, header.content, pandoc.Attr())
+end
+#+end_src
+
+然后使用 ~--lua-filter=remove-header-attr.lua~ 参数来避免这一困难。
+
+* 输出 Office 
+相比于 markdown 或者 org-mode 的各种不适应，office 的 docx 或者 pptx 却意外好用。基本上转换后调整格式就好了额，数学公式和代码块都有非常好的处理。
