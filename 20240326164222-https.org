@@ -3,3 +3,5 @@
 :END:
 #+title: HTTPS
 
+#+DOWNLOADED: screenshot @ 2024-05-07 18:14:48
+[[file:img/2024-05-07_18-14-48_screenshot.png]]
