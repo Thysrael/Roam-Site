@@ -3,5 +3,7 @@
 :END:
 #+title: HTTPS
 
+HTTPS 可以被简单理解为 [[id:f410c15c-aa8c-4bd5-93ba-d7d85b265d93][HTTP]] 加上了加密模块 SSL 。
+
 #+DOWNLOADED: screenshot @ 2024-05-07 18:14:48
 [[file:img/2024-05-07_18-14-48_screenshot.png]]
