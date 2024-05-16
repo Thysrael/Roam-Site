@@ -20,3 +20,5 @@
 - 二进制文件查看：[[id:cae2f5fe-7a8f-4261-b5d9-fd19a827b14b][Objdump]]
 - 文件系统挂载：[[id:08c38d77-be39-4cae-8a2c-813a7ba0c158][Mount]]
 - 根目录切换：[[id:0e30c122-9c10-4ee3-9cd3-1831732d59cb][Chroot]]
+- 编译器：[[id:136d2032-4c95-462f-bb01-fd06481a73d2][GCC]]
+- 网络接口：[[id:5d98cf2a-43f3-4295-b091-49f8b09280ac][IfConfig]]
