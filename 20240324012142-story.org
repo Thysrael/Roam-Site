@@ -16,6 +16,7 @@
 * Insight
 - Web 后端服务与后端框架：[[id:3f8ec5ca-0d6f-4d0f-93ba-58dab7c65614][Web Server vs Framework]]
 - 冯·诺依曼架构与哈佛架构：[[id:b7060f45-26a8-4c89-b631-142076ded4ae][Von Neumann vs Havard Architecture]]
+- 控制台与终端：[[id:39455c08-d2eb-49ae-9afe-c951113e086e][Console, Terminal, TTY]]
 
 * Novel
 - [[id:b294a890-404e-4852-b565-096ccf1f1fa7][汪曾祺]]
