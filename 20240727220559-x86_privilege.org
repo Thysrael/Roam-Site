@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       fef51f33-848b-4a3f-aeb7-f9ca620577ef
+:END:
+#+title: X86 Privilege
+
+* 总论
