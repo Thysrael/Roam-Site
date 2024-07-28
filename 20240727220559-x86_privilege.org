@@ -69,11 +69,11 @@ X86 一共设计了 4 个特权等级，分别是 Ring0 ~ 3，其中：
 
 那为什么不直接把这个“依从的内核态代码”放到用户态呢？换句话说，这段代码的语义是“内核中不接触机密数据的代码”，那么为什么不直接把这样的代码放到用户态形成一个函数库呢？可能是由于这些代码还是和内核实现联系得比较紧密吧，我甚至感觉到了一丝微内核的设计思想。当然无论怎样，这个特性被架空了，也说明了这个特性在设计上的鸡肋。
 
-最后放一段官方文档上的文字：
+最后放一段官方文档上的文字，这里说明了上文阐述的意思：
 
-#+begin_src text
+#+begin_quote
 Conforming segments are used for code modules such as math libraries and exception handlers, which support applications but do not require access to protected system facilities. These modules are part of the operating system or executive software, but they can be executed at numerically higher privilege levels (less privileged levels). Keeping the CPL at the level of a calling code segment when switching to a conforming code segment prevents an application program from accessing nonconforming code segments while at the privilege level (DPL) of a conforming code segment and thus prevents it from accessing more privileged data.
-#+end_src
+#+end_quote
 
 * 动态
 ** Gate
