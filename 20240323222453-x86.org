@@ -17,3 +17,4 @@
 - 汇编：[[id:a733fdd8-e161-4d9c-bed4-cfde736421b0][X86 Assemble]]
 - 系统调用：[[id:4764e866-da4b-4291-9d89-cd1a187c1bec][X86 Syscall]]
 - 权限、任务、中断管理：[[id:fef51f33-848b-4a3f-aeb7-f9ca620577ef][X86 Privilege]]
+- 二进制兼容：[[id:929d7b6f-554a-4902-80eb-2466aa11185b][X86 ABI]]
