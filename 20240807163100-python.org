@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       c7a6fb83-aaa7-485c-b32b-93ef16b7affa
+:END:
+#+title: Python
+
+Python 还是太全面了~
+
+* 基础
+- 可变参数：[[id:2fd92f8f-5bc0-41b2-b5c4-a4955d339b06][Python VA]]
+
+* 元编程
+- 装饰器：[[id:14647b81-6676-4ff0-af88-e7af3dc545dc][Python Decorator]]
+
+* 函数式编程
+- 闭包：[[id:a7dbf3a6-05a8-4408-950a-d80be197ab62][Python Closure]]

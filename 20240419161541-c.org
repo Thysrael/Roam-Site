@@ -3,3 +3,4 @@
 :END:
 #+title: C
 
+- [[id:114774aa-1a4f-4fef-a1e0-01b05cc733cf][C Restrict]]
