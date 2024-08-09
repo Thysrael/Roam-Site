@@ -13,3 +13,4 @@
 - [[id:eb833bae-3841-4422-a8ab-40e51c27bd6b][离散数学]]
 - [[id:774bd682-2a02-44c9-b9cd-e9b65ca92232][Security]]
 - [[id:dfa334b9-6522-480f-8dbf-bbb71de5758d][AI]]
+- [[id:8e437e98-e595-4d22-b218-8fe6e98ba6cf][Graphics]]
