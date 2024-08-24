@@ -26,9 +26,15 @@ Stage2 Bootloader 主要负责加载内核：
 - [[id:2b0578d1-ed79-4fd4-838c-672dcc151b6e][Unix]]
 
 * 组件
-- [[id:b93aba59-daa5-4ed1-aa32-a5c32fb46a72][Kernel Build]]
-- [[id:c4a730af-1bf7-48c4-839e-510cad9c26a1][Interrupt]]
-- [[id:40407a50-af1b-4741-a0e9-a3e2a06aa2ba][Process]]
-- [[id:359e8726-a892-42d7-a679-d6fd1f51ff22][FS]]
-- [[id:7351996e-f1b8-4054-8c79-17285f48af42][Virtualization]]
-- [[id:a0e6a0e6-7341-43ed-bec6-9a442e8007ed][Device]]
+- Linux 内核构建：[[id:b93aba59-daa5-4ed1-aa32-a5c32fb46a72][Kernel Build]]
+- 中断：[[id:c4a730af-1bf7-48c4-839e-510cad9c26a1][Interrupt]]
+- 进程管理：[[id:40407a50-af1b-4741-a0e9-a3e2a06aa2ba][Process]]
+- 进程间通信：[[id:c0968d4e-8cdf-4923-b866-5f87522e7521][IPC]]
+- 文件系统：[[id:359e8726-a892-42d7-a679-d6fd1f51ff22][FS]]
+- 虚拟化：[[id:7351996e-f1b8-4054-8c79-17285f48af42][Virtualization]]
+- 设备：[[id:a0e6a0e6-7341-43ed-bec6-9a442e8007ed][Device]]
+- 安全：[[id:774bd682-2a02-44c9-b9cd-e9b65ca92232][Security]]
+
+* 理念
+- 微内核：[[id:8c581929-cb97-4621-a2d7-1f1218087ca7][Microkernel]]
+- 外核：[[id:73a7eb01-596c-4ea6-8702-cfe9a5e6015d][ExoKernel]]

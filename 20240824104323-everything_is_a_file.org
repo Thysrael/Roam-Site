@@ -39,5 +39,28 @@
 int select(int nfds, fd_set *readfds, fd_set *writefds, fd_set *exceptfds, struct timeval *timeout);
 #+end_src
 
+其中的 ~timeout~ 表示阻塞一定的时间。
+
 * 直接 I/O 操作
-我们可以通过 ~mmap()~ 可以将设备文件映射到内存，允许应用程序像访问内存一样访问设备。这对于性能要求较高的应用程序非常有用。而普通文件则更常用常规读取和写入操作。
+我们可以通过 ~mmap()~ 可以将文件映射到内存，允许应用程序像访问内存一样访问文件。 ~mmap()~ 的签名如下：
+
+#+begin_src c
+void* mmap(void *addr, size_t length, int prot, int flags, int fd, off_t offset);
+#+end_src
+
+其中 ~prot~ 是对于内存保护（protect）性质（可读可写）的描述，而 ~flags~ 是对于映射性质（共享，私有，匿名）的描述。
+
+~mmap()~ 有很多神奇应用，这都来自于“一切皆文件”这个强大抽象。比如说设备是一个文件，当我们将设备文件 mmap 后，就可以避免通过内核来读写数据了。这对于性能要求较高的应用程序非常有用。而普通文件则更常用常规读取和写入操作。
+
+再比如说，我们可以将内存视为一种文件（类似于 I/O 设备文件），然后我们就可以通过 ~mmap()~ 在用户和内核之间共享内存了。更进一步，其实内核中的所有资源我们都可以视为一种“文件”，然后在内核中将其操作定义好，那么就可以在用户态使用 ~FD~ 来间接控制了，其形式大概如下：
+
+#+begin_src c
+static struct file_operations fops = {
+    .open = custom_open,
+    .release = custom_release,
+	// ...
+    .mmap = custom_mmap,
+};
+#+end_src
+
+在这种情况下，其实整个 Unix/Linux 的 File 设计，就与 [[id:5714ce6b-5c63-4c16-b38f-9b69d302f3f3][Capability]] 机制非常相像了。
