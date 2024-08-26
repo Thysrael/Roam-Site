@@ -3,3 +3,4 @@
 :END:
 #+title: IPC
 
+- 信号：[[id:984efd69-75b8-462d-a992-ab5ff4271cad][Signal]]
