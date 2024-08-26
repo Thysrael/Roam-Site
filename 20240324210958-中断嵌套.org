@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       8262a4b3-061b-410e-9acf-a70af20efb5e
-:END:
-#+title: 中断嵌套
-
