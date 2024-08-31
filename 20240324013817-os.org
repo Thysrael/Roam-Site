@@ -24,6 +24,7 @@ Stage2 Bootloader 主要负责加载内核：
 * 操作系统
 - [[id:03abe92f-02d1-4dfb-addc-5ba89fc354be][Linux]]
 - [[id:2b0578d1-ed79-4fd4-838c-672dcc151b6e][Unix]]
+- [[id:9b12f29e-686a-4d74-93a9-220a14a4bd73][Windows]]
 
 * 组件
 - Linux 内核构建：[[id:b93aba59-daa5-4ed1-aa32-a5c32fb46a72][Kernel Build]]
