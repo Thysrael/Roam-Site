@@ -11,12 +11,14 @@
 - [[id:39455c08-d2eb-49ae-9afe-c951113e086e][Console, Terminal, TTY]]
 - [[id:08f158a5-849d-470c-a16f-33d782068dc0][SD vs eMMC]]
 - [[id:70d01197-a7a9-45a2-825a-d93b3a20bdca][GPIO]]
+- [[id:da7bb769-325c-49c3-b3ec-e4ba81fb626a][Char Device vs Block Device]]
 
 * 设备管理
 这里介绍对于设备的管理技术：
 
 - [[id:4956339b-8b75-406d-b033-2242fb8a3773][ACPI]]
 - [[id:5cfb61f9-86e0-4f30-8959-a81f27e6113e][Device Tree]]
+- [[id:2a60b237-22b2-4f51-9176-d9acc174251f][Device Number]]
 
 * 总线 Bus
 总线的带宽计算公式如下：
