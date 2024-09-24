@@ -7,8 +7,4 @@ tmpfs 是 Linux 中一种临时文件系统，它使用内存（RAM）来存储�
 
 常见的 tmpfs 文件系统包括 =/run, /tmp= 等。其实 tmpfs 可以被划分到“伪文件系统”中。除了 tmpfs 这一种外，伪文件系统还包括：
 
-- =/proc=: proc 文件系统
-- =/sys=: sysfs 文件系统
-- =/dev=: devtmpfs 文件系统
-
 其实 tmpfs 的思路和我在操作系统中实现的文件系统很类似。

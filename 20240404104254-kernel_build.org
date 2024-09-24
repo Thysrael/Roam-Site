@@ -6,3 +6,4 @@
 - [[id:b8457aba-78d5-48cc-bb0e-d8272dc3cc85][vmlinux vs Image]]
 - [[id:50ab95fd-c96d-4467-a6a9-e34a4744e2fa][Kernel Module]]
 - [[id:6c7e31fb-6d5c-4059-8087-0ce8410d2d8a][KConfig]]
+- [[id:73f142fe-d868-42f1-9850-130c74daeebd][Kernel Header]]

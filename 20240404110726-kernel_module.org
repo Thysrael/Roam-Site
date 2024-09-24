@@ -31,11 +31,11 @@
 最终构建命令和清除命令如下：
 
 #+begin_src makefile
-  all:
-  	make -C $(KDIR) M=$(PWD) modules
+all:
+	make -C $(KDIR) M=$(PWD) modules
 
-  clean:
-  	make -C $(KDIR) M=$(PWD) clean
+clean:
+	make -C $(KDIR) M=$(PWD) clean
 #+end_src
 
 * Command
