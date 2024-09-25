@@ -11,5 +11,7 @@
 - =/proc/meminfo= ：显示内存的使用情况。
 - =/proc/version= ：显示内核的版本信息。
 - =/proc/modules= ：显示内核模块挂载信息。
+- =/proc/kallsyms= ：内核的所有符号
+- =/proc/devices= ：内核所有的设备驱动（即每个主设备号一行）
 
 需要注意，在查看 =/proc/= 时最好加上 ~sudo~ ，这是因为很多信息都只有在 root 权限下才能得到正确展示。
