@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       c19c9780-84f3-40de-a755-1f88b4b9f5b5
-:END:
-#+title: Semphere
-
