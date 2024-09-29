@@ -35,6 +35,8 @@
 - =/include/asm= ：不同架构存在差异的头文件，它会被链接到 =/arch/<arch>/include/asm= 上
 - =/include/net, include/video...= 等其他头文件，是具体的设备子模块。
 
+严格意义上，一个函数能否被内核模块使用，并不取决于它的声明是否出现在 =/include/linux/= 中，而是取决于它的实现后是否有 ~EXPORT_SYMBOL~ 宏声明。
+
 * =/usr/include= 和 =/lib/modules/$(shell uname -r)/build= 
 其实这个部分不应该在这里提出的，但是这个部分是写作的主旨，是最能体现“头文件是 API 的载体”的写作主旨的部分。
 
