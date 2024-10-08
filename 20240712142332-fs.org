@@ -16,3 +16,7 @@
 - 临时文件系统：[[id:e789137e-9e7c-40cb-9623-d4e824fb15d8][TmpFS]]
 - 进程文件系统：[[id:cca4a29b-cb79-4a61-943e-79c039ad715e][Proc FS]]
 - 系统文件系统：[[id:0fd5f49e-02b3-4ae5-abb5-379e9fd73a82][Sys FS]]
+
+* 设计思想
+- [[id:7b282ca5-3a3f-4a49-aaed-0591596d1cd0][FAT vs INode]]
+- [[id:41085103-8e32-4c34-ae89-422711ee009b][FS Journal]]
