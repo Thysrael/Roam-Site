@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e1104263-adcd-43f0-81ec-9af70ae66cd6
+:END:
+#+title: Process Group
+
+在会话上下文语义下的进程组也被称为作业（job）。有前台作业（fg）和后台作业（bg）之分。
