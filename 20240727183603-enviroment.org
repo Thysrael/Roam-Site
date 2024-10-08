@@ -16,3 +16,4 @@
 - 磁盘分区工具：[[id:f0579c4f-a581-4da1-8451-230629d3c930][GParted]]
 - 静态网站生成器：[[id:aa310248-f305-487c-a1e8-0d4f8d26e9ca][Hexo]]
 - Linux 发行版：[[id:8210f9ca-154c-4102-b60e-64f4fa1c7773][ArchLinux]]
+- 构建工具：[[id:90a458e2-3cce-44e8-9337-eb6499c2d28b][Make]]
