@@ -9,3 +9,4 @@
 
 - 进程 ID ：[[id:cc68aae7-8e11-48b1-b944-69ef0d6ea890][Pid]] 
 - 由内核线程生成的用户进程：[[id:fcfe7339-0adb-4f4e-8a11-081737dedf04][Kernel User-mode Helpers]]
+- 会话管理：[[id:52073a83-dbe9-4387-9b23-ac497725ab84][Session]]
