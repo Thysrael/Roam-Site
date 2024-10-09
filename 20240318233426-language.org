@@ -15,6 +15,8 @@
 - [[id:dca1538c-0f4f-486a-9d39-556f2ab5d121][Java]]
 - [[id:bf75d5ae-95de-4b8f-b3f0-cff45fa5c1d4][Scala]]
 - [[id:9f250cd1-7d2f-4f19-85aa-8a8cad68ec04][Koltin]]
+- [[id:920e0ad2-a9d0-4a0c-9e75-21ec9fdc28d9][ShellScript]]
+- [[id:90a458e2-3cce-44e8-9337-eb6499c2d28b][Makefile]]
 
 * 标记语言
 - [[id:dd7d49d7-2e39-4d2f-b360-3bf105e95dd0][HTML]]

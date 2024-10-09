@@ -26,3 +26,4 @@
 - 设备文件操作：[[id:da048f21-85ba-45d6-a438-ae648944e1a1][Dd]]
 - 压缩/解压缩：[[id:d61f1439-255a-4d3a-a14d-00337f86ed00][UnZip]]
 - root 权限代理：[[id:5ee5c9b1-46c2-4528-993d-841aa291728b][Sudo]]
+- compile_commands.json 生成工具：[[id:9c343288-5b22-495a-b8b1-70832d7d69a3][Bear]]

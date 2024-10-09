@@ -3,7 +3,7 @@
 :END:
 #+title: Dd
 
-~dd~ 命令用于转换和复制文件，因为在 Linux 下设备和磁盘镜像都是文件，所以 ~dd~ 的主要作用就是操作他们。
+~dd~ 命令用于转换和复制文件，因为在 Linux 下设备和磁盘镜像都是文件，所以 ~dd~ 的主要作用就是操作他们。 ~dd~ 功能强大，动辄操作几个 G 的文件，所以很多参数看似冗余鸡肋，实际上是必不可少的。
 
 * 块大小与个数
 在使用 ~dd~ 命令时，块大小（block size，通过 ~bs=~ 指定）和块个数（通过 ~count=~ 指定）是两个非常重要的参数，它们对命令的性能和行为有显著影响。
@@ -26,4 +26,4 @@ sudo dd bs=4M if=/path/of/some_os.iso of=/dev/sdx status=progress oflag=sync
 dd if=/dev/zero of=file.img bs=1M count=1024
 #+end_src
 
-使用来自 =/dev/zero= 的空字节创建一个 1GB 大小的文件。~bs=1M count=1024~ 指示 ~dd~ 使用 1MB 的块大小，复制 1024 个块。
+使用来自 =/dev/zero= 的空字节创建一个 1GB 大小的文件。 ~bs=1M count=1024~ 指示 ~dd~ 使用 1MB 的块大小，复制 1024 个块。
