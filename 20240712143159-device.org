@@ -19,6 +19,7 @@
 - [[id:4956339b-8b75-406d-b033-2242fb8a3773][ACPI]]
 - [[id:5cfb61f9-86e0-4f30-8959-a81f27e6113e][Device Tree]]
 - [[id:2a60b237-22b2-4f51-9176-d9acc174251f][Device Number]]
+- [[id:ca13f53c-074c-405c-ab34-af0f5d44bf83][UDev]]
 
 * 总线 Bus
 总线的带宽计算公式如下：

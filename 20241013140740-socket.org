@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       fcd31007-f5a0-4519-afcd-73dddfcffe3a
+:END:
+#+title: Socket
+

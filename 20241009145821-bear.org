@@ -10,5 +10,5 @@
 
 #+begin_src conf
 CompileFlags:
-  Remove: [-femit-struct-debug-baseonly, -fconserve-stack, -fno-allow-store-data-races]
+  Remove: [-femit-struct-debug-baseonly, -fconserve-stack, -fno-allow-store-data-races, -mabi=lp64]
 #+end_src

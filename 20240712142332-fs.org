@@ -17,6 +17,12 @@
 - 进程文件系统：[[id:cca4a29b-cb79-4a61-943e-79c039ad715e][Proc FS]]
 - 系统文件系统：[[id:0fd5f49e-02b3-4ae5-abb5-379e9fd73a82][Sys FS]]
 
+** 磁盘文件系统
+- [[id:6096afa9-773f-483a-a259-c8a73db690a5][FAT]]
+- EXT
+- [[id:538ceec2-e612-476a-97f1-573cf943d3c2][BtrFS]]
+- [[id:2c5e57ab-0fe6-4113-aaca-8e49c8ef55f4][NTFS]]
+
 * 设计思想
 - [[id:7b282ca5-3a3f-4a49-aaed-0591596d1cd0][FAT vs INode]]
 - [[id:41085103-8e32-4c34-ae89-422711ee009b][FS Journal]]

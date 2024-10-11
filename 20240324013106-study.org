@@ -14,3 +14,4 @@
 - [[id:dfa334b9-6522-480f-8dbf-bbb71de5758d][AI]]
 - [[id:8e437e98-e595-4d22-b218-8fe6e98ba6cf][Graphics]]
 - [[id:8638049a-635a-4f83-bbd6-abc14976e109][DBMS]]
+- [[id:bf6d0659-4370-4113-bd0b-4eefab2dd075][Parallel]]

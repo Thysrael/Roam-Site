@@ -4,3 +4,5 @@
 #+title: IPC
 
 - 信号：[[id:984efd69-75b8-462d-a992-ab5ff4271cad][Signal]]
+- 套接字：[[id:fcd31007-f5a0-4519-afcd-73dddfcffe3a][Socket]]
+- 桌面消息总线：[[id:a09a53de-9b28-48c8-b8b2-73c07cb5db34][D-Bus]]
