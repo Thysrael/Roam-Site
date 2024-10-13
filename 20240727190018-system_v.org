@@ -8,4 +8,4 @@ System V（也称为 SysV）是一个著名的 UNIX 操作系统版本，同时�
 
 * 与 BSD 对比
 - 系统设计：SystemV 侧重于更精细的控制与更加企业友好的功能，而 BSD 更注重开放性和社区开发。
-- 协议与工具：两者在工具集和协议实现上有所不同，例如，System V 使用 SystemV IPC 机制（消息队列、信号量和共享内存），而 [[id:53950d04-73ab-41dd-b9a2-af2d289719fc][BSD]] 使用以 socket 为基础的网络通信。
+- 协议与工具：两者在工具集和协议实现上有所不同，例如，System V 使用 SystemV IPC 机制（消息队列、信号量和共享内存），而 [[id:53950d04-73ab-41dd-b9a2-af2d289719fc][BSD]] 使用以 [[id:fcd31007-f5a0-4519-afcd-73dddfcffe3a][Socket]] 为基础的网络通信。
