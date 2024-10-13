@@ -15,9 +15,11 @@ Firmware 固件存放在主板 ROM 中的软件，一般由硬件厂商提供，
 Bootloader 是外存上的软件，用于加载操作系统。因为启动过程比较繁复，所以往往分成多个阶段进行加载（一般是 2 个阶段）。
 
 Stage1 Bootloader 主要是对于内存控制器的设置和对于安全的设置:
+
 - [[id:3e44a83f-ded4-48eb-bcfb-21f79a57a21c][MBR]]
 
 Stage2 Bootloader 主要负责加载内核：
+
 - [[id:7960b36a-4544-499a-b4c8-e8346b75805a][Uboot]]
 - [[id:10732f20-f769-45b8-abe8-9dc4c7a921c3][Grub]]
 
