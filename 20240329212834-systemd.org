@@ -129,6 +129,23 @@ ListenStream=8080
 WantedBy=sockets.target
 #+end_src
 
+** Mount
+Mount Unit 可以用于开机自动挂载设备。示例如下：
+
+#+begin_src conf
+[Unit]
+Description=Mount NVMe partition to /home/xxx/hdd
+
+[Mount]
+What=/dev/nvme0n1p1 # 指定要挂载的设备
+Where=/home/xxx/hdd # 指定挂载点
+Type=auto           # 可以根据文件系统类型指定（如 ext4、ntfs 等），使用 auto 让系统自动检测。
+Options=defaults    # 可以根据需要添加挂载选项
+
+[Install]
+WantedBy=multi-user.target
+#+end_src
+
 * 特点
 ** 快速启动
 Systemd 的启动速度相比于之前的 init 程序要更快，这主要得益于两个方面：

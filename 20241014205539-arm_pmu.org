@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       0c247ea5-c714-408d-b54f-a6b01c3ac473
+:END:
+#+title: ARM PMU
+
+有 event counter 和 cycle counter 
+
+对于 event counter ：
+
+- ~PMCR~: Performance Monitor Control Register. ~PMCR.E~ 是总的 enable ？
+- ~PMCNTENSET~: Permormance Monitor Counter Enable Set. 似乎是各个 counter 的 enable 寄存器，可能长得像一个位图数组 ~PMCNTENSET.P<n>~ 。
+
+对于 cycle counter ：
+
+- ~PMCCNTR~: Performance Monitor Cycle Counter Register. 就是 cycle register 。
+- ~PMCR~: Performance Monitor Control Register. ~PMCR.E(0)~ 是总的 enable 。 ~PMCR.C(2)~ 是将 ~PMCCNTR~ 设置为 0 。
+- ~PMCNTENSET~: Performance Monitor Counter Enable Set. ~PMCNTENSET.C(31)~ 是 cycle 的 enable
+- ~PMUACR_EL1~: Performance Monitor User Access Control Register. ~PMUACR.C~ 是 cycle 的 user access 。似乎在 A78 上没有这个寄存器。
+- ~PMUSERENR_EL0~: Performance Monitor User Enable Register. ~PMUSERENR_EL0.UEN(4)~ 似乎是 user 的总 enable 。 ~PMUSERENR_EL0.CR(2)~ 置 1 ，那么就是只读的，置 0 是可读写的。 ~PMUSERENR_EL0.EN(0)~ ，如果置 0 那么就会禁止访问寄存器。
+- ~PMCCFILTR~: Performance Monitor Cycle Counter Filter Register. 决定了 cycle counter 的工作模式， ~PMCCFILTR.U(30)~ 置 1 表示不在 EL0 进行计数。

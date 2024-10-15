@@ -78,3 +78,25 @@ gcc demo.c -ldl -lpthread -lssl -lcrypto
 ~-l~ 参数会在系统标准库路径中查找一种特定格式的文件，名为 ~lib<library>.a~ 或者 ~lib<library>.so~ 。不得不说有些库的名字非常短，比如说 ~-lm~ 其实说的是一个叫做 ~m~ 的库，而不是两个编译器参数 ~-l, -m~ 连写，不要造成困扰。
 
 头文件搜索路径和库的搜索路径都是在 gcc 编译前 ~./Configure~ 中设定的。
+
+* 静态库的制作
+静态库的本质是多个 object 文件的归档文件，我们这样制作：
+
+#+begin_src shell
+# 编译
+gcc -c a.c -o a.o
+gcc -c b.c -o b.o
+# 创建静态库
+ar rcs libdemo.a a.o b.o
+#+end_src
+
+其中 ~-c~ 表示只编译，不链接。 ~ar~ 是一个用于创建静态库， ~r~ 对于 ~libdemo.a~ 库中的同名 object 的更新， ~c~ 表示对于 ~libdemo.a~ 的创建
+
+* 链接顺序
+tldr: 按照如下顺序进行链接，就一般不会出现问题：
+
+#+begin_src text
+Object 文件，高级库，基础库
+#+end_src
+
+需要注意的是，不仅库有链接顺序的问题，object 和库之间也有链接问题（但是）。
