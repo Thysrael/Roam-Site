@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       422b5ea1-894a-4823-914b-cb87167e8eec
+:END:
+#+title: Grep
+
+虽然 ~grep~ 的 Global Regular Expression Print ，但是实际上只支持普通正则表达式，对于模糊搜索，有两点可以更加“模糊”的方法：
+
+一个是使用 ~-i~ 参数，这样可以忽略大小写，另一个是使用 ~-E~ 参数，这样可以使用拓展正则表达式。
