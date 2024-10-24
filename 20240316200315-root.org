@@ -23,3 +23,15 @@ Can you hear me?
 
 Call me /ROOT/!
 #+end_quote
+
+Roam 还是比较简陋的，没有办法每个 Node 都有一个留言板，所以如果有想说的，请在这里留言：
+
+#+BEGIN_HTML
+<script src="https://utteranc.es/client.js"
+        repo="Thysrael/blog-comment"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+#+END_HTML
