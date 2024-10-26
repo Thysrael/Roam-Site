@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a7df6c32-754c-4f5f-865a-d36cd34882c9
+:END:
+#+title: Chisel
+
+Chisel（Constructing Hardware in a Scala Embedded Language）是一种用于硬件设计的高级硬件描述语言，特别适用于数字电路的设计和建模。Chisel 是一个基于 [[id:bf75d5ae-95de-4b8f-b3f0-cff45fa5c1d4][Scala]] 的 DSL，旨在提高硬件设计的表达力和可重用性。

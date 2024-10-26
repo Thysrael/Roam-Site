@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       26d51e50-9c2f-4a11-b055-d18d82e77fc7
+:END:
+#+title: Lua
+
+Lua 是巴西团队开发的，Lua 这个名字来源于葡萄牙语中的“月亮”。

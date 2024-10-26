@@ -4,19 +4,21 @@
 #+title: Language
 #+filetags: :root:
 
-* 编程语言
-- [[id:5be19847-0df3-40e7-a546-3288bd234c54][Javascript]]
+* 编译型语言
 - [[id:ab518d02-b179-4173-adfa-0bed5591ae81][C++]]
-- [[id:e7a58c7d-6957-407e-9950-efbb520e9310][Elisp]]
 - [[id:a209fbd7-ef3d-4796-895a-c080dd44190e][C]]
 - [[id:bd3fe176-7567-4ace-ae72-8a36f951332e][Rust]]
+
+* 解释型语言
 - [[id:aa217bba-decd-4153-8bc7-abdf68bc9710][Haskell]]
 - [[id:c7a6fb83-aaa7-485c-b32b-93ef16b7affa][Python]]
+- [[id:26d51e50-9c2f-4a11-b055-d18d82e77fc7][Lua]]
+- [[id:5be19847-0df3-40e7-a546-3288bd234c54][Javascript]]
+
+* JVM
 - [[id:dca1538c-0f4f-486a-9d39-556f2ab5d121][Java]]
 - [[id:bf75d5ae-95de-4b8f-b3f0-cff45fa5c1d4][Scala]]
 - [[id:9f250cd1-7d2f-4f19-85aa-8a8cad68ec04][Koltin]]
-- [[id:920e0ad2-a9d0-4a0c-9e75-21ec9fdc28d9][ShellScript]]
-- [[id:90a458e2-3cce-44e8-9337-eb6499c2d28b][Makefile]]
 
 * 标记语言
 - [[id:dd7d49d7-2e39-4d2f-b360-3bf105e95dd0][HTML]]
@@ -34,3 +36,8 @@
 - [[id:5017bd42-044f-4003-9685-6a8d634f0512][JSON]]
 - [[id:67babc04-7154-4153-b815-1fa995594d84][Toml]]
 
+* DSL
+- [[id:90a458e2-3cce-44e8-9337-eb6499c2d28b][Makefile]]
+- [[id:920e0ad2-a9d0-4a0c-9e75-21ec9fdc28d9][ShellScript]]
+- [[id:a7df6c32-754c-4f5f-865a-d36cd34882c9][Chisel]]
+- [[id:e7a58c7d-6957-407e-9950-efbb520e9310][Elisp]]
