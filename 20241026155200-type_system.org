@@ -61,3 +61,11 @@ TypeError: can only concatenate str (not "int") to str
 let value = "hello";
 value = value + 1; // value = "hello1"
 #+end_src
+
+
+* 总结
+其实这里记录的只是一种说法，有可能还有其他定义，总之从根本上把握不同语言设计的倾向性即可。
+
+最后放一张图总结：
+
+[[file:img/clipboard-20241026T162154.png]]
