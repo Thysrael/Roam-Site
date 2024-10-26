@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       6c758b1d-26d3-41b7-8fe1-602d7a6e7756
+:END:
+#+title: Compile
+
+- 编译器：[[id:136d2032-4c95-462f-bb01-fd06481a73d2][GCC]]
+- 即时编译技术：[[id:80f7d2ee-df9b-41e3-a30e-58c01092e4c7][JIT]]

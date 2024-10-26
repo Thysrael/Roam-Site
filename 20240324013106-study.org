@@ -15,3 +15,4 @@
 - [[id:8e437e98-e595-4d22-b218-8fe6e98ba6cf][Graphics]]
 - [[id:8638049a-635a-4f83-bbd6-abc14976e109][DBMS]]
 - [[id:bf6d0659-4370-4113-bd0b-4eefab2dd075][Parallel]]
+- [[id:6c758b1d-26d3-41b7-8fe1-602d7a6e7756][Compile]]
