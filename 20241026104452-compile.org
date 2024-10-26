@@ -5,3 +5,5 @@
 
 - 编译器：[[id:136d2032-4c95-462f-bb01-fd06481a73d2][GCC]]
 - 即时编译技术：[[id:80f7d2ee-df9b-41e3-a30e-58c01092e4c7][JIT]]
+- LISP: [[id:98bda82c-8a63-4179-911c-d38815483d8c][Lisp]]
+- 类型系统：[[id:3f0ebf18-6804-4a1c-87cd-d95c8e55f891][Type System]]

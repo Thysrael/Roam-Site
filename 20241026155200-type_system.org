@@ -1,0 +1,63 @@
+:PROPERTIES:
+:ID:       3f0ebf18-6804-4a1c-87cd-d95c8e55f891
+:END:
+#+title: Type System
+ 
+* Static vs Dynamic
+静态语言（Static）和动态（Dynamic）语言的区别在于变量类型是何时被确定（或者说何时被检查的）的。
+
+静态语言的类型是在编译时被确定的，我们需要在编译前就指出每个变量的类型是什么。静态语言又可以分为两类：
+
+- Manifest Type: 必须清楚的宣告每一个变量的类型，比如说 [[id:a209fbd7-ef3d-4796-895a-c080dd44190e][C]] 语言，变量前面就是类型。
+- Inferred Type: 允许编译期进行一些变量的类型推断，比如说 [[id:bd3fe176-7567-4ace-ae72-8a36f951332e][Rust]] 和 [[id:ab518d02-b179-4173-adfa-0bed5591ae81][C++]] 的 ~auto~ 关键字。
+
+动态语言的变量的类型是在运行时它被第一次赋值时确定的，并且允许它在运行时改变类型，比如说 [[id:c7a6fb83-aaa7-485c-b32b-93ef16b7affa][Python]] 。
+
+* Explicit vs Implicit
+强（Explicit）类型语言和弱（Implicit）语言的区别在于弱类型语言允许类型的 *“隐式转换”* 。从这个角度看，我们发现 Rust 是最“强”的类型语言，因为它连 ~i32~ 转 ~i64~ 都不会同意。相比之下 C 和 C++ 允许许多隐式类型转换，甚至允许一些不符合内存布局的转换，比如浮点数转整数：
+
+#+begin_src c
+#include <stdio.h>
+
+int main() {
+	float b = 3.14;
+	int a = b;
+	printf("a = %d\n", a); // a = 3
+	return 0;
+}
+#+end_src
+
+因此它们是弱类型语言。
+
+Python 一般被视为强类型语言，虽然类似的上文 C 的隐式转换逻辑在 Python 中也行得通：
+
+#+begin_src python
+b = 3.14
+a = b + 1 # int `1` implicit to float
+print(a) # 4.14
+
+c = 1
+c = 3.14 # just a rebind
+#+end_src
+
+但是对于更加复杂的类型，就是行不通的了，比如说：
+
+#+begin_src python
+b = "hello"
+a = b + 1 
+#+end_src
+
+会报错：
+
+#+begin_src text
+TypeError: can only concatenate str (not "int") to str
+#+end_src
+
+可以看出 python 是由严格的 type 检查机制的，上面例外可能是 python 的语法糖。
+
+而 [[id:5be19847-0df3-40e7-a546-3288bd234c54][Javascript]] 是弱类型语言，比如下面的例子是成立的：
+
+#+begin_src javascript
+let value = "hello";
+value = value + 1; // value = "hello1"
+#+end_src
