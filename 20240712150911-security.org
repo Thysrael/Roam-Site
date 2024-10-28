@@ -7,3 +7,4 @@
 - [[id:a12d0c4c-921f-4302-b205-78f0da8635ab][Hierarchical vs Capability]]
 - [[id:9746d37b-e89a-42f8-8a9d-37bdee824440][Attack]]
 - [[id:c186c33e-4142-49d5-92ae-cf2a0a5556a2][Web of Trust]]
+- [[id:a9cf2c8e-59c1-49cc-b2b8-572eec9a1ef1][PGP]]
