@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       84990ecf-1efa-4c8a-9c74-9df25a51eb39
+:END:
+#+title: Network
+
+- 网络接口：[[id:39fada1e-4dd9-45c9-be70-a881ecadfc78][Network Interface]]
+- 网络协议：[[id:b321fd38-320e-4b15-9c3c-1e9a029f2c45][Network Protocol]]

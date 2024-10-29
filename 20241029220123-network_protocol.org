@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       b321fd38-320e-4b15-9c3c-1e9a029f2c45
+:END:
+#+title: Network Protocol
+
+* ARP
+Address Resolution Protocol ，用于建立 IP 到 MAC Address 的映射。
+
+* DHCP
+动态主机配置协议（DHCP，Dynamic Host Configuration Protocol）是一种网络管理协议，用于自动分配和管理网络上设备的 IP 地址、子网掩码、默认网关和其他网络配置参数。

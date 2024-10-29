@@ -39,6 +39,7 @@ Stage2 Bootloader 主要负责加载内核：
 - 安全：[[id:774bd682-2a02-44c9-b9cd-e9b65ca92232][Security]]
 - 并行：[[id:431af327-c60e-4f6f-852a-4784b3171bfe][Parralle]]
 - 初始化：[[id:8a5f7eed-7163-4716-a6ca-80d1971fca88][Init]]
+- 网络：[[id:84990ecf-1efa-4c8a-9c74-9df25a51eb39][Network]]
 
 * 理念
 - 微内核：[[id:8c581929-cb97-4621-a2d7-1f1218087ca7][Microkernel]]

@@ -1,0 +1,51 @@
+:PROPERTIES:
+:ID:       2b8fc5f8-0734-46d9-a3ef-c7aa3f05a821
+:END:
+#+title: CSS
+
+CSS（Cascading Style Sheets）是一种用于描述 [[id:dd7d49d7-2e39-4d2f-b360-3bf105e95dd0][HTML]] 或 [[id:c18b3c56-cf81-4df5-9657-5a19bcf4e7be][XML]]（包括 SVG 和 XML）文档的表现形式的样式表语言。
+
+* 选择器
+** 元素选择器
+即 html 元素的选择器，比如说
+
+#+begin_src css
+body {
+    font-family: LXGW WenKai Mono;
+}
+#+end_src
+
+** 类选择器
+在 html 中含 ~class~ 的属性元素，如：
+
+#+begin_src html
+<div class="inline-code"></div>
+#+end_src
+
+可以用 ~.~ 来表示选择器，并用逗号可以同时设置多个 ~class~ ：
+
+#+begin_src css
+.inline-code, .editor-kit-code-block .code-block-content {
+    font-family: JetBrainsMono Nerd Font Mono;
+    font-size: 13px;
+}
+#+end_src
+
+** ID 选择器
+在 html 中含有 ~id~ 的属性元素，如：
+
+#+begin_src html
+<div id="my_id"></div>
+#+end_src
+
+可以用 ~#~ 开头的选择器：
+
+#+begin_src css
+#my_id {
+    font-size: 13px;
+}
+#+end_src
+
+* 常见属性
+- ~font-family~
+- ~font-size~

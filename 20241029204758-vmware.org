@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       d580dda6-e826-4d03-be65-6743c8a364a5
+:END:
+#+title: VMWare
+
