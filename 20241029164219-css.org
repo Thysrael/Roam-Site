@@ -49,3 +49,25 @@ body {
 * 常见属性
 - ~font-family~
 - ~font-size~
+
+* 自定义字体
+可以使用 ~@font-face~ 来实现自定义字体，如加粗的字体和普通字体不同，如下所示：
+
+#+begin_src css
+@font-face {
+    font-family: 'MyCustomFont';
+    src: local('Sarasa Mono SC Bold');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: local('LXGW WenKai Mono');
+}
+
+body#zh-CN {
+    font-family: MyCustomFont;
+}
+#+end_src
+
+在 CSS 中，任何以 ~@~ 开头的规则都被称为 *at-rule* （特定规则），这类规则通常用于引入额外的功能或指令。 
