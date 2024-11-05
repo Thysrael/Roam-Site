@@ -7,3 +7,5 @@
 - 悲观锁和乐观锁： [[id:ad55bb19-61e7-4f0e-acbd-cb289cc58e28][Optimistic Lock vs Pessimistic Lock]]
 - 信号量：[[id:a79b65ec-7b50-408f-84ca-5cdb3d83d3da][Semaphore]]
 - 条件变量：[[id:dee1ced5-7a6d-483b-ad13-5a025fcec5c7][Condition Variable]]
+- 事务：[[id:dbecf1c9-8dcd-410a-9bed-955c80d711ea][Transaction]]
+- 两阶段锁：[[id:bbecfbe8-ba3b-4977-ba56-5f53aedbbfde][2PL]]
