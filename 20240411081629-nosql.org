@@ -19,3 +19,13 @@
 文字游戏很有意思，acid（“酸”）与 base（“碱”）正好是对立的，当然这不代表 RDBMS 和 NoSQL 是水火不容的哈。
 
 BASE 是对 CAP 一致性和可用性权衡的结果，来源于对大规模互联网分布式实践的总结，是基于 CAP 理论演化来的。
+
+NoSQL 运动有一个很有趣的口号：
+
+#+begin_src sql
+select fun, profit from real_world where relational=false;
+#+end_src
+
+目前 SQL 和 NoSQL 的占比：
+
+[[file:img/clipboard-20241107T153541.png]]
