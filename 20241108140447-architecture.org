@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       4ec68c60-635c-4b0a-89bd-f50a5f32f915
+:END:
+#+title: Architecture
+
+会记录一些比较偏向硬件思维的东西，如果只是系统用到了，那么其实应该会记在 [[id:cba7c63a-21aa-4875-835e-888813182ff2][OS]] 里。
+
+- [[id:deb8ffd4-7f33-4cf0-871f-dc9327d59221][Qemu]]

@@ -17,3 +17,4 @@
 - [[id:bf6d0659-4370-4113-bd0b-4eefab2dd075][Parallel]]
 - [[id:6c758b1d-26d3-41b7-8fe1-602d7a6e7756][Compile]]
 - [[id:a835b84d-cb73-4f9d-b8b9-6319a657fe30][Quantum Compute]]
+- [[id:4ec68c60-635c-4b0a-89bd-f50a5f32f915][Architecture]]

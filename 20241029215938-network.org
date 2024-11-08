@@ -5,3 +5,4 @@
 
 - 网络接口：[[id:39fada1e-4dd9-45c9-be70-a881ecadfc78][Network Interface]]
 - 网络协议：[[id:b321fd38-320e-4b15-9c3c-1e9a029f2c45][Network Protocol]]
+- 统一资源标识符: [[id:0ecfd147-19cc-432f-b73d-bd2833f125d5][URI]]

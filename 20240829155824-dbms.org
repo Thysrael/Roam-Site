@@ -11,5 +11,5 @@
 - [[id:116303b7-7f7f-4513-9893-cc3f5ff32beb][Redis]]
 
 * 概念
-- 事物：[[id:dbecf1c9-8dcd-410a-9bed-955c80d711ea][Transaction]]
+- 事务：[[id:dbecf1c9-8dcd-410a-9bed-955c80d711ea][Transaction]]
 - NoSQL 运动：[[id:56bb7eba-e269-441a-a4d6-fa5abf4c26af][NoSQL]]

@@ -9,6 +9,6 @@ PCIe 即 Peripheral Component Interconnect Express 。
 
 PCIe 采用点到点拓扑，不同于 PCI 的共享总线拓扑，所以效率更好。
 
-PCIe 上，root 侧有不同厂家的 cpu，device 侧有不同加速器，而且pcie 提出的时候就没有加速器一致性访存的约束。
+PCIe 上，root 侧有不同厂家的 cpu，device 侧有不同加速器，而且 pcie 提出的时候就没有加速器一致性访存的约束。
 
-也是近几年 AI 爆热吵起来的，只有 GPU 加速器这种强大的设备才需要拥有这么强大的总线。
+也是近几年 AI 爆热吵起来的，只有 GPU 加速器这种强大的设备才需要拥有这么强大的总线（严格意义上不能叫“总线”了，因为点对点拓扑，每个 PCIe 线路都是“专用”的）。
