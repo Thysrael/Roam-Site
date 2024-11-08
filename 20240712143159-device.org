@@ -37,3 +37,7 @@
 
 - [[id:45f5bda0-5fb7-4c7d-abb5-961533c52a2c][PCIe]]
 - [[id:d0780f23-3f33-45f1-a114-6148abfbf330][CXL]]
+- [[id:4945cf38-685f-4603-9691-5e34e18ce8a1][USB]]
+- [[id:63ea86b5-0a12-4ecb-8023-c48da9752ffb][AXI]]
+- [[id:04b7d657-bd00-4c5f-a228-21657b15e7b3][SPI]]
+- [[id:5e855cc8-1b2e-40bc-a473-6f2d5f42b8e5][I2C]]
