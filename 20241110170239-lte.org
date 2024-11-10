@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       70b35d17-7e6c-4d66-b8c1-5cb2929aa9f7
+:END:
+#+title: LTE
+
+LTE（Long Term Evolution）是第四代移动通信技术（4G）的标准之一，由3GPP（第三代合作伙伴计划）制定。它旨在提高移动网络的速度和容量，提供更好的用户体验。

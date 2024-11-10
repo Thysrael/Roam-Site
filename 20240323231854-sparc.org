@@ -3,3 +3,4 @@
 :END:
 #+title: SPARC
 
+由 [[id:49180d53-be3e-455d-a49a-d84a83acabfd][Sun]] 公司开发的 RISC 架构。

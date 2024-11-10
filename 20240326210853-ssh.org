@@ -9,6 +9,7 @@ ssh (Secure Shell) 为用户连接远端服务器的 shell 提供了安全的环
 ssh 具有 2 个特点：
 
 - 基于[[id:0f7e3160-d9b1-4ae7-a0d3-5edfa0c5ef76][非对称加密]]的安全认证，所以相比传统的网络服务程序，如 FTP、POP、Telnet 要更加安全。
+- 传输的数据是经过加密的，中间人攻击无效。
 - 传输的数据可以是经过压缩的，所以可以加快传输的速度。
 
 在 Linux 上，客户端直接使用 ~ssh~ 即可，服务端需要安装 ~openssh~ ，Windows 用户端需要安装 Putty 。
@@ -97,8 +98,10 @@ ssh 命令格式如下
       ProxyCommand ssh -q proxyuser@proxyhost -p proxyport nc %h %p
 #+end_src
 
-它等价于
+它等价于：
 
 #+begin_src shell
   ssh -o "ProxyCommand ssh -q proxyuser@proxyhost -p proxyport nc %h %p" -p 2200 -i ~/.ssh/id_rsa_test user@ssh.test.com
 #+end_src
+
+* SSH Tunnel

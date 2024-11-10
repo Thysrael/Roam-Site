@@ -3,13 +3,14 @@
 :END:
 #+title: Network Protocol
 
-* ARP
-Address Resolution Protocol ，用于建立 IP 到 MAC Address 的映射。
+* 协议
+- [[id:e3d80e63-7d52-48f1-bec6-91be22591cb5][ARP]]
+- [[id:21746c83-9642-4003-b554-cd350f454810][DHCP]]
+- [[id:9dfd4159-455a-4440-9b4a-e54539b90c2d][Wi-Fi]]
 
-* DHCP
-动态主机配置协议（DHCP，Dynamic Host Configuration Protocol）是一种网络管理协议，用于自动分配和管理网络上设备的 IP 地址、子网掩码、默认网关和其他网络配置参数。
 
-* Wi-Fi
-Wi-Fi 是工作在数据链路层的一种协议，和它具有相同生态位的是以太网（也就是有线网），无线网络在数据链路层以上和有线网没有区别。
+* 标准
+似乎协议和标准的差别并不大，但是我感觉似乎标准的商业竞争行更强一些。
 
-Wi-Fi 因为很容易被监听的关系，所以需要加密来保护数据（这也是我们需要输入密码才能连 Wi-Fi 的原因，而网线直接插就能直接用），目前 Wi-Fi 网络安全协议是 WPA（Wi-Fi Protected Access）。
+- [[id:63e65e24-5a8f-4d61-be53-12f5cbc3406d][CDMA]]
+- [[id:70b35d17-7e6c-4d66-b8c1-5cb2929aa9f7][LTE]]
