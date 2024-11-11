@@ -7,3 +7,6 @@
 - 网络协议：[[id:b321fd38-320e-4b15-9c3c-1e9a029f2c45][Network Protocol]]
 - 统一资源标识符: [[id:0ecfd147-19cc-432f-b73d-bd2833f125d5][URI]]
 - 移动网络：[[id:d8c27057-c3f1-4038-9d6a-6475a8d02871][Mobile Networks]]
+- 隧道：[[id:e04891c0-1fd9-45cb-a88a-db883ff96714][Tunnel]]
+- 代理：[[id:7773cc25-06bc-48cb-9dcd-2640dabac4ca][Proxy]]
+- 网络地址转换：[[id:dfb1ccb2-feab-4be7-aebc-91a73bcccdc9][NAT]]

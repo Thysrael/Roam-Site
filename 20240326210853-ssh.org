@@ -105,3 +105,35 @@ ssh 命令格式如下
 #+end_src
 
 * SSH Tunnel
+关于隧道的概念，可以参考 [[id:e04891c0-1fd9-45cb-a88a-db883ff96714][Tunnel]] 。SSH Tunnel 本质是一种端口转发（Port Forwarding）技术。
+
+SSH Tunnel 有 3 种：
+
+** Local Port Forwarding
+当 Client 需要访问位于 Server 上的资源或服务，但由于防火墙设置、网络配置或专用网络限制而无法直接访问时，就会使用本地端口转发。示意图如下：
+
+[[file:img/clipboard-20241111T170222.png]]
+
+命令如下：
+
+#+begin_src shell
+ssh -L [local_port]:[destination_address]:[destination_port] [username]@[ssh_server]
+#+end_src
+
+其效果就是，原本在 server 上私有的 ~destination_port~ ，现在 client 可以通过直接访问本机的 ~local_port~ 来获得服务。
+
+** Remote Port Forwarding
+Remote Port Forwarding 也被叫做反向隧道（Reverse Tunnel），让 Server 可以访问 Client 上的私密资源，相当于绕过 client 的防火墙，命令如下：
+
+#+begin_src shell
+ssh -R [remote_port]:[destination_address]:[local_port] [username]@[ssh_server]
+#+end_src
+
+此时 server 可以通过访问 ~remote_port~ 来访问 client 的 ~local_host~ 。
+
+** Dynamic Port Forwarding
+动态端口转发（Dynamic Port Forwarding）是一种将 Client 当作 Server 的 [[id:7773cc25-06bc-48cb-9dcd-2640dabac4ca][反向代理]] ，直观的效果就是 server 可以用 client 的梯子了。命令如下：
+
+#+begin_src shell
+ssh -D [local_port] [username]@[ssh_server]
+#+end_src
