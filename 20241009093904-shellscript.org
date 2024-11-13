@@ -29,3 +29,24 @@ echo $((a + b)) # 8
 - 用 ~$(command)~ 来引用命令的输出。
 - 用 ~$((a + b))~ 来进行数学计算。
 - ~$1~, ~$2~ 等表示传递给脚本的参数， ~$#~ 表示参数的数量， ~$@~, ~$*~ 用于引用所有参数。
+
+* 流程控制
+** 循环
+需要注意的是，似乎下文列到的循环只在 ~bash~ 中使用，而在 ~sh~ 中并不支持：
+
+#+begin_src shell
+for (( i=1; i<=n; i=i+1 ))
+do 
+	s=$(( S{s}+s{i} ))
+done
+
+for var in con1 con2 con3
+do
+	commands
+done
+
+for c in {a..z}
+do 
+	echo $c
+done
+#+end_src
