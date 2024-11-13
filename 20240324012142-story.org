@@ -22,6 +22,7 @@
 - 继承式和能力式权限管理：[[id:a12d0c4c-921f-4302-b205-78f0da8635ab][Hierarchical vs Capability]]
 - 提供机制而不提供策略：[[id:b169b4e7-0291-483c-a3ea-92376e1bf052][Mechanism or Policy]]
 - 两种不同的文件系统设计思路：[[id:7b282ca5-3a3f-4a49-aaed-0591596d1cd0][FAT vs INode]]
+- 漏洞的两种形式：[[id:cc120069-14be-4a51-a7f8-0f811400f91c][0Day vs NDay]]
 
 * Novel
 - [[id:b294a890-404e-4852-b565-096ccf1f1fa7][汪曾祺]]
