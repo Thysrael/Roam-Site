@@ -5,9 +5,11 @@
 
 PCIe 即 Peripheral Component Interconnect Express 。
 
-[[file:img/clipboard-20240824T113218.png]]
+[[file:img/clipboard-20241114T180859.png]]
 
 PCIe 采用点到点拓扑，不同于 PCI 的共享总线拓扑，所以效率更好。
+
+[[file:img/clipboard-20240824T113218.png]]
 
 PCIe 上，root 侧（也叫做 Host）有不同厂家的 cpu，device 侧有不同加速器或者其他设备，而且 PCIe 提出的时候就没有加速器一致性访存的约束。
 
