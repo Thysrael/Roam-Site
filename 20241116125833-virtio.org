@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b79f9e4b-a9d3-4669-a808-6f8d79b804f0
+:END:
+#+title: VirtIO
+
+VirtIO 是一种

@@ -21,7 +21,7 @@ git rebase [commit]
 因为 ~git rebase~ 的 *“重播”* 特性，所以我们常常在重播过程中整一些花活，比如说压缩多个 commit ，或者删除一些 commit 。
 
 * Pull Conflict
-我们 ~git pull --rebase~ 时，本质上是先用 ~git fetch~ 更新 ~origin~ 标签，然后再在 ~local~ 分支上执行 ~git rebase origin~ 的命令。相当于我们将不同于 ~origin~ 的本地工作都重播到 ~origin~ 上。
+我们 ~git pull --rebase~ 时，本质上是先用 ~git fetch~ 更新 ~origin~ 标签，然后再在 ~local~ 分支上执行 ~git rebase origin~ 的命令。相当于我们将 ~local~ 上不同于 ~origin~ 的修改都重播到 ~origin~ 上。
 
 当然只要是 ~pull~ ，就会有冲突，对于 ~git merge~ 来说，处理冲突就是将冲突解决后形成一个新的 commit 即可：
 

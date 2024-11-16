@@ -5,3 +5,4 @@
 
 - [[id:faa1eb5e-de3e-4107-8585-8c5e4ea9a0e0][Github Page]]
 - [[id:fb77b5a2-7654-42b7-824c-74e0ffe000b8][Github Action]]
+- [[id:4b71c6b4-36f6-4f6e-a3e2-f9ff622041c2][Github Pull Request]]

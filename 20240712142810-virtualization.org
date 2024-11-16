@@ -6,3 +6,6 @@
 - [[id:ea15802a-7023-4bcd-978b-8e338092a7ba][eBPF]]
 - [[id:d5e96e08-d27e-4166-9566-02a623f387af][CGroups]]
 - [[id:dc0fa854-6826-4b9d-9f6e-f70f16db8f32][Linux Namespace]]
+- [[id:b7b7ca28-f309-4761-a3cb-ddad67978a72][KVM]]
+- [[id:deb8ffd4-7f33-4cf0-871f-dc9327d59221][Qemu]]
+- [[id:b79f9e4b-a9d3-4669-a808-6f8d79b804f0][VirtIO]]
