@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID:       efd0ea25-f1e8-4777-8dfe-0c103dd7b262
+:END:
+#+title: GNUPlot
+
+* Design
+我也没有体验过其他的数据图绘制软件，反正我觉得 GNUPlot 是有点风格在身上的。
+
+它在命令中使用了大量的缩写，比如说将 ~help~ 缩写成 ~h~ ，将 ~title~ 缩写成 ~t~ ，将 ~using~ 缩写成 ~u~ 将 ~with~ 缩写成 ~w~ ，将 ~plot~ 缩写成 ~p~ ，将相同的重复数据用 ~""~ 表示等。这种非常频繁出现的缩写甚至到了模糊语义的地步，我觉得这是为了方便交互式输入。
+
+GNUPlot 是不经常使用 ~,~ 的，而是大量使用空格来隔离参数。
+
+* Set/Unset/Show
+总的来说，GNUPlot 的工作流程是用 ~set~ 设置一堆的环境变量（在 GNUPlot 中的），然后在利用 ~plot~ 绘图， ~plot~ 命令会根据自身的参数和之前 ~set~ 设置的环境变量来指导绘图的行为。
+
+我们可以用 ~show~ 命令来打印环境变量的值。用 ~unset~ 设置原本的环境变量（或者提供一种 ~false~ 的语义）。
+
+* Help
+如果有不懂的，可以使用 ~help~ 命令（也可以用 ~?~ ）在交互终端中查询各种东西，但是并不是每次都会成功。其格式为：
+
+#+begin_src gnuplot
+help {<topic>}
+h  {<topic>}
+?  {<topic>}
+#+end_src
+
+在解释完 ~topic~ 后，有可能会继续出现 ~subtopic~ 的 list 让用户选择继续查看。在查看完后会重新回到 ~subtopic~ 的选择界面，但是已经没有 subtopic 的 list 了，我们可以键入 ~?~ 来查看 list 。
+
+* Overview
+
+- ~key~: 右上角的图例，在 ~plot~ 中也可以用 ~title~ 指定。
+- ~data~: 绘图所需要的数据， ~data style~ 是绘图默认的样式。
+- ~style~: 绘图的样式，在 ~plot~ 中使用 ~with~ 指定，也可以用 ~set style~ 设置。
+- ~lable~: 坐标轴的名字。
+- ~tics~: 坐标轴的刻度。
+- ~range~: 坐标轴的范围
