@@ -16,3 +16,8 @@
 - [[id:e36b6a81-d1e8-4af4-93ec-0993ecd5c4a9][RISCV]]
 - [[id:810e5c0e-4843-4fa5-b354-f9fc670b1fde][Alpha]]
 - [[id:6393f20c-5321-48be-b682-5773766eb6b9][SPARC]]
+
+* 组件
+- 高速缓存：[[id:bf9c5182-0274-4beb-89b3-c7386c09c0ad][Cache]]
+- 总线：[[id:1cae8e38-cc68-4535-9067-e54672e9b356][BUS]]
+- 交叉开关：[[id:0e74c879-eb7b-4156-a9e1-7305c6a0d840][CrossBar]]

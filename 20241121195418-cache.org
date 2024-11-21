@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       bf9c5182-0274-4beb-89b3-c7386c09c0ad
+:END:
+#+title: Cache
+
+* Cache Thrash
+缓存抖动（Cache Thrash）指的是 Cache 不断地进行逐出和读入的行为。这种行为一旦发生，Cache 优化内存带宽的效果就不存在了，Cache 会频繁读写内存。
+
+造成 cache thrash 的原因是多样化的。最直观的就是 cache 过小，如果 CPU 希望读取一个很大的数据，那么 cache 就会为了这个数据逐出其他的数据，而被逐出的数据可能还会用到，那么 cache 就需要再次从内存中读入，而读入又会导致其他的数据从 cache 中被逐出。颇有一种“拆东墙补西墙，顾脑袋顾不了屁股”的美感。
+
+还有一种造成 cache thrash 的原因是由 cache 一致性导致的“伪共享”。有一种 cache 一致性的方式的方式是，一旦一个 cpu core 写入了某个 cache line ，那么就把其他 cpu core 上含有相同内容的其他 cache line 都 invalid 掉（相当于逐出了）。问题在于，一个 cache line 上可能有多个原本不相关变量，可能因为写入了某个变量，导致其他变量也被逐出了。这就又构成了频繁的逐出，形成了 thrash 。
