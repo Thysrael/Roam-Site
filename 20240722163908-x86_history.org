@@ -40,9 +40,9 @@
 * P5 vs K5
 在 1993 年，Intel 推出了 Pentium 奔腾 CPU ，它在微体系结构中首次引入了超标量架构（P5 架构）。除了超标量外，Pentium 还引入了分支预测单元。
 
-在 1996 年，Intel 推出了基于 P5 架构的微处理器 Pentium MMX，添加了 MMX 指令集。MMX（Multi-Media Extension）指令集，目的是增强提升 CPU 在 2D 音像、图形和通信等多媒体应用对诸如编码与解码等工作的效率。MMX 的本质是一种 SIMD 指令集，后来的 SSE (Streaming SIMD Extensions) 和 AVX (Advanced Vector Extensions) 都是在其上发展出来的。
+在 1996 年，Intel 推出了基于 P5 架构的微处理器 Pentium MMX，添加了 MMX 指令集。MMX（Multi-Media Extension）指令集，目的是增强提升 CPU 在 2D 音像、图形和通信等多媒体应用对诸如编码与解码等工作的效率。MMX 的本质是一种 SIMD 指令集，后来的 [[id:bd7b96ee-6128-46a0-a2fc-f936d31dfec3][SSE]] (Streaming SIMD Extensions) 和 [[id:d37889ad-32ca-407c-b762-92af228e5816][AVX]] (Advanced Vector Extensions) 都是在其上发展出来的。
 
-Pentium 也被叫做 80586 ，据传之所以 Intel 要起一个新名字，是为了和友商 AMD 拉开差距。
+Pentium 也被叫做 80586 ，据传之所以 Intel 要起一个新名字，是为了和友商 AMD 拉开差距。 ~Pent-~ 在英文前缀中，就是“5”的意思。
 
 在 1996 年，AMD 也推出自己的新产品 K5 ，但是上市时间有些过晚了，加上项目一直受到设计和制造问题的困扰，所以市场表现并不好。
 
@@ -68,16 +68,40 @@ Pentium 也被叫做 80586 ，据传之所以 Intel 要起一个新名字，是�
 
 在 2002 年，Duron 停产，接替它的是 Sempron（闪龙）。此外在 2003 年，ARM 也推出了自己的服务器处理器 Opteron （皓龙）。
 
-* Core vs Zen
+* SkyLake vs Zen
 在后面的时间里，随着工艺的进步放缓，摩尔定律逐渐失效，架构设计也没有太多的花活儿，所以后面的趋势就变成了：
 
 - 挤牙膏：Intel 采用了 Tik-Tok 策略，在 Tik 年优化制程工艺，在 Tok 年优化架构设计。但是这种进步都比较缓慢。
-- 和 GPU 集成：ARM 因为有 GPU 线，所以提出了 APU 的概念，即 APU = CPU + GPU 。
+- 和 GPU 集成：ARM 因为有 GPU 生产线，所以提出了 APU 的概念，即 APU = CPU + GPU 。
 - 多核：既然单核性能无法提升，那么就采用多个处理器核心。
 
+在这段历史中，应用场景被细化成“个人 PC”和“服务器”两个领域，Intel 和 AMD 在这些分赛道上展开了激烈的角逐。在 PC 领域，是 Core（酷睿） vs Ryzen ，在服务器领域是 Xeon （/ˈziːɒn/，至强） vs Epyc（霄龙）。
+
+Server CPU 支持多路互联，简单的说就是 1 台机器可装多个 CPU，PC CPU 不支持这种工作方式。由于服务器 CPU 针对高稳定性设计，在用料上一般都是选用优质材质，并且支持多路互联和长时间工作，和相同性能的普通 CPU 比，价格自然也是更高。此外，高端服务器 CPU 更上运用大量的最新先进技术，价格更贵。
+
+需要注意的是，上边的名字只是产品系列名，并不是微架构名。Intel 在这个时期的微架构是可拓展 CPU （Scalable Processor），名字先是 SkyLake ，然后是 Cove ；而 AMD 的微架构是 Zen 。
+
+** PC
 在这段时期，Intel 的处理器系列为 Core（酷睿），基本上吊打 AMD ，这是因为 AMD 经历了一个非常失败的收购案，同时本身的制程工业也不如 Intel 。此外 AMD 还过分依赖 GPU 集成和多核处理器，比较忽视单核性能的提高，导致市场对 AMD 并不买账。
 
-这种吊打情况直到 2017 年，ARM 推出了基于 Zen 架构的 Ryzen（锐龙）系列，在服务器市场推出了 EPYC（霄龙），皓龙时代结束。同时速龙堕入低端市场。这种策略和技术的调整使得 AMD 的市场占有率又重新增加。
+这种吊打情况直到 2017 年，ARM 推出了基于 Zen 架构的 Ryzen（锐龙）系列，在服务器市场推出了 Epyc（霄龙），皓龙时代结束。同时速龙堕入低端市场。这种策略和技术的调整使得 AMD 的市场占有率又重新增加。
+
+** Server
+Intel 在服务器 CPU 的型号格式如下：
+
+[[file:img/clipboard-20241126T110115.png]]
+
+其中产品级别包括 Platinum(铂金), Golden, Silver, Bronze ，原本是 E3, E5, E7 ，这些都类似与 PC Core 的 i3, i5, i7 。分化高中低端市场。
+
+Intel Scalable CPU 代际表格整理：
+
+| 时间 | 代数 | CPU 代际         | 制程工艺 | 微架构      |
+|------+------+------------------+----------+-------------|
+| 2017 |    1 | Skylake(server)  | 14nm     | Skylake     |
+| 2019 |    2 | Cascade Lake     | 14nm     | Skylake     |
+| 2020 |    3 | Cooper Lake      | 14nm     | Skylake     |
+| 2021 |    3 | Ice Lake(server) | 10nm     | Sunny Cove  |
+| 2023 |    4 | Sapphire Rapids  | 7nm      | Golden Cove |
 
 * 总结
 Intel 和 ARM 相爱相杀了半个世纪，回顾它们的角力，我们关注了处理器在位宽、安全、频率、架构、拓展指令集、工艺和市场等多个方面的较量。
