@@ -21,4 +21,4 @@
 - [[id:63ea86b5-0a12-4ecb-8023-c48da9752ffb][AXI]]
 - [[id:04b7d657-bd00-4c5f-a228-21657b15e7b3][SPI]]
 - [[id:5e855cc8-1b2e-40bc-a473-6f2d5f42b8e5][I2C]]
-
+- CPU 片间互联总线：[[id:82f13281-3f2c-4e63-872b-1c94e784a69f][UPI]]
