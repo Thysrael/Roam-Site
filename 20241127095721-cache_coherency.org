@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       7f07ca26-4783-4e83-886a-1275b7cf3921
+:END:
+#+title: Cache Coherency
+
+* 定义
+Cache Coherency 指的是在多核系统中，不同核上的 Cache 应当保持一致，因为他们都是内存的拷贝。效果如图：
+
+[[file:img/clipboard-20241127T095959.png]]
+
+而更加本质的来说，所有被纳入 CC 的存储元件，在逻辑上就被视作了相同的一份数据的不同“分身”。包括内存，各级缓存，本质上都是同一份数据，我们写 cache 就等于写 memory 了。维护这种一致性依靠的是 CC 的硬件机制，省去了软件编程人员手动维护的开销（比如说缺页异常和页面逐出算法就是软件在维护内存与外存的一致性）。
+
+与之形成对比的就是 [[id:45f5bda0-5fb7-4c7d-abb5-961533c52a2c][PCIe]] 设备 private 的存储，需要显式地用 DMA 搬运到 memory 中，或者用 MMIO 的方式去读写。这种方式增加了软件开发的难度，同时性能也不高，所以我们现在主张通过 [[id:d0780f23-3f33-45f1-a114-6148abfbf330][CXL]] 这样支持 CC 的设备总线协议，来将设备的 private memory 也纳入 CC 的范畴，相当于 device private memory 也变成 host memory 的一个备份了。
+
+* CHA
+CC 的实现，在 [[id:47b2dbfe-695d-4af4-91e3-d9cd7220f379][Intel]] 中依赖的是 Cache Agent, CA 和 Home Agent, HA ，两者也合称 Cache and Home Agent ，CHA 。
+
+我个人感觉是这样的，CPU 在访问 Memory 的时候也是有一定的硬件机制的，CPU 直接沟通的就是 Home Agent ，它相当于是内存（或者是 memory controller）的一个 Agent ，用于让 CPU 更加方便地访问。Cache Agent 也是类似，它相当于是让 Cache 可以被 CPU 更加方便地访问。之所以说 CHA 在维护 CC ，可能是因为一致性的维护就是在 CPU 访问 Cache 和 Memory 的时候。
+
+更具体来说，每个 core 中都有一个与之对应的 CA，同时在每个 Memory Controller 中实现一个 HA(Home Agents)。如果内核需要的读数据不在本地 L1 和 L2 中，core 会首先发送请求给 CA，CA 会在本地 L3 或者其他 L1/L2 Cache 中寻找数据。如果发生 Cache Miss，CA 会将内核读请求发个 HA，HA 在 memory 中找到对应地址数据并返回。
+
+下面这幅图我觉得有些问题，因为 core 的请求被另一个 core 的 CA 响应了，而不是自己的 CA。我觉得可能是因为这幅图少了一些路径，core 应该先询问自己的 CA ，然后发现 miss 了，然后自己的 CA 查询其他 Cache ，发现在某个 cache 中，所以由那个 CA 来响应，但是那个 CA 自己的 value 又失效了，所以采取 HA 中查找（不保真）。
+
+[[file:img/clipboard-20241127T104228.png]]
+
+Intel 使用两种监听模式：source snooping 和 home snooping。
+
+source snooping 模式，监听信息由 CA 发送。如果 L3 Miss 发生，CA 会广播监听请求到其他 CA 和 HA。如果其他 CA 的状态为 modified，exclusive 或 forward，那么会将 CA 对应的 cache line 数据返回。HA 会搜集所有监听响应，解析冲突，必要时提供 memory 中的数据。该模式有更低的延时更高的效率，但它的带宽消耗非常高。
+
+home snooping 模式，监听信息由 HA 发送。该模式下，CA 接收到内核请求后不会广播寻找，而是将所有请求全部转给 HA，HA 再发送监听信息给合适的 CA（拥有相同 cache line 的 CA）。由于 HA 存有 directory，因此HA可以精准请求CA得到最新的数据。该模式延时要高一点，但带宽会有效降低，同时Cache性能提升明显。
