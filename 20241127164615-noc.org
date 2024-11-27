@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       aab51be0-a4a3-4df0-83a7-8c2593b7fd1e
+:END:
+#+title: NoC
+
+

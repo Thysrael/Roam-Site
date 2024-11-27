@@ -21,3 +21,5 @@
 - 高速缓存：[[id:bf9c5182-0274-4beb-89b3-c7386c09c0ad][Cache]]
 - 总线：[[id:1cae8e38-cc68-4535-9067-e54672e9b356][BUS]]
 - 交叉开关：[[id:0e74c879-eb7b-4156-a9e1-7305c6a0d840][CrossBar]]
+- 片上网络：[[id:aab51be0-a4a3-4df0-83a7-8c2593b7fd1e][NoC]]
+- 印刷电路板：[[id:e6295bda-ac9d-4615-823b-1f6a6960f677][PCB]]
