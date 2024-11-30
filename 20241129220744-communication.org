@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       720c8d1d-9567-44ff-853a-80196da3edf1
+:END:
+#+title: Communication
+#+filetags: :root:
+
+- [[id:66b639d3-49b4-49de-8480-a01bc550b441][Pronunciation]]
