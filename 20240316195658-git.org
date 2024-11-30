@@ -13,6 +13,7 @@
 - 变基：[[id:d420ddad-8a9b-4b2a-bb88-07882f0c85da][Git Rebase]]
 - 远端：[[id:0ab31a16-fa0c-4f7e-b9d5-54ff23ff98ee][Git Remote]]
 - 配置：[[id:9d4a6a83-4386-4155-a2a9-9230d8ccc762][Git Config]]
+- 打包：[[id:e6ecd33f-2f2b-4126-a5b3-13823969eee3][Git Archive]]
 
 * Code hosting platforms
 这里记录一些代码托管平台相关笔记
