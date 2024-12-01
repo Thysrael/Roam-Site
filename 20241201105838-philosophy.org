@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       4824116c-8516-4f45-95b2-06ca6d767551
+:END:
+#+title: Philosophy
+#+filetags: :root:
+
+- 关于思维的认识，辩证法：[[id:62a6dbe7-273e-4184-ab59-fac4554a9d34][Dialectics]]
+- 形而上学：[[id:a89907b0-9fdb-4d6d-adb5-4f061fc81059][MetaPhysics]]
