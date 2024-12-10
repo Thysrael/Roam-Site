@@ -8,12 +8,14 @@
 - [[id:ab518d02-b179-4173-adfa-0bed5591ae81][C++]]
 - [[id:a209fbd7-ef3d-4796-895a-c080dd44190e][C]]
 - [[id:bd3fe176-7567-4ace-ae72-8a36f951332e][Rust]]
+- [[id:80942767-8c07-4371-9d9a-c9617c05068a][Fortran]]
 
 * 解释型语言
 - [[id:aa217bba-decd-4153-8bc7-abdf68bc9710][Haskell]]
 - [[id:c7a6fb83-aaa7-485c-b32b-93ef16b7affa][Python]]
 - [[id:26d51e50-9c2f-4a11-b055-d18d82e77fc7][Lua]]
 - [[id:5be19847-0df3-40e7-a546-3288bd234c54][Javascript]]
+- [[id:43cd1623-f8a3-4a30-91cd-04d9d6406d80][Perl]]
 
 * JVM
 - [[id:dca1538c-0f4f-486a-9d39-556f2ab5d121][Java]]
