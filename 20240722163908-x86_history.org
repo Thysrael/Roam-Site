@@ -107,3 +107,7 @@ Intel Scalable CPU 代际表格整理：
 
 * 总结
 Intel 和 ARM 相爱相杀了半个世纪，回顾它们的角力，我们关注了处理器在位宽、安全、频率、架构、拓展指令集、工艺和市场等多个方面的较量。
+
+* 附录
+- [[https://jia.je/hardware/2023/01/09/amd-cpu/][AMD 处理器型号总结]]
+- [[https://jia.je/hardware/2023/01/11/intel-cpu/][Intel 处理器型号总结]]

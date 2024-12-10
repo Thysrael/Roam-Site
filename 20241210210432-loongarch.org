@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8555e4b9-b4b9-4786-a6d2-79db176fde97
+:END:
+#+title: LoongArch
+
+[[https://jia.je/hardware/2023/08/10/loongarch-cpu/][LoongArch 处理器型号总结]]

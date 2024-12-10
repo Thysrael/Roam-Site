@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       daa48d85-88f8-499d-9019-2f4d4b84aca1
+:END:
+#+title: Project
+#+filetags: :root:
+
+- 硬件模拟器：[[id:deb8ffd4-7f33-4cf0-871f-dc9327d59221][Qemu]]
+- CPU Benchmark: [[id:a1147629-5eac-4735-b393-47ca6ea014da][SPEC CPU]]
+- 加密库：[[id:34f2806b-64c7-476d-a47e-08df8ac1d02f][OpenSSL]]

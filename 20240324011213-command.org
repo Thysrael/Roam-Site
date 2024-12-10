@@ -34,4 +34,3 @@
 - 网络配置：[[id:124d2afc-a585-4be0-9bcf-2acb8eeb6aaf][Net Tools]]
 - 二进制文件查找：[[id:fffb3538-49e3-41de-a3f3-b8da96fe6368][Whereis]]
 - 构建选项配置：[[id:150337f8-094b-4cd9-bfa1-01b4c7207546][Configure]]
-- CPU Benchmark: [[id:a1147629-5eac-4735-b393-47ca6ea014da][SPEC CPU]]

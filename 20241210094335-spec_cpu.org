@@ -4,7 +4,7 @@
 #+title: SPEC CPU
 
 * 构建
-SPEC CPU 不是免费的，所以需要自己找资源下载。
+SPEC，全称 Standard Performance Evaluation Corporation 。SPEC CPU 不是免费的，所以需要自己找资源下载。
 
 因为 bencmark 使用的是 [[id:a209fbd7-ef3d-4796-895a-c080dd44190e][C]], [[id:43cd1623-f8a3-4a30-91cd-04d9d6406d80][Perl]] 和 [[id:80942767-8c07-4371-9d9a-c9617c05068a][Fortran]] ，并且使用了 bzip ，所以需要使用如下命令安装相关依赖：
 
