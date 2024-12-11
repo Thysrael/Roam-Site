@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       9238ef68-a8c0-4953-87fe-2e5ac29f7cbf
 :END:
-#+title: Python Control Flo
+#+title: Python Control Flow
 
 * Loop
 ~for-in~ 循环：
