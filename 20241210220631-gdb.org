@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       e6a0f900-f5e7-461e-8365-076bcaebc1f8
+:END:
+#+title: GDB
+

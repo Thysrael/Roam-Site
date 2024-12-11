@@ -3,3 +3,4 @@
 :END:
 #+title: RMS
 
+RMS 是 [[id:e6a0f900-f5e7-461e-8365-076bcaebc1f8][GDB]] 和 [[id:7ba3aeb8-f711-4fc8-aac6-5ef4fb647011][Emacs]] 的作者。
