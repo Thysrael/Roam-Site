@@ -106,7 +106,7 @@ printf "%d iter, sum: %d\n", i, sum
 使用 ~list/l~ 可以打印源码，使用 ~l .~ 可以重新定位。
 
 * 场景
-** Coredump/Bus error
+** Core dump/Bus error/Segmentation fault
 非常好用，gdb 后使用 ~bt~ 就可以查看在哪里 coredump 了。
 
 ** Deadlock
