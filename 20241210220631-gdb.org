@@ -130,7 +130,7 @@ int print(int val)
 }
 #+end_src
 
-可以通过调用
+可以通过调用 ~call print(3)~ 进行调用。
 
 ** 内存布局
 对于用户进程而言，全局变量（数据段）、PC 和函数指针（数据段）和堆变量（堆）都位于低地址区（以 ~0x55~ 开头），而局部变量（栈）和动态链接库都在高地址区（以 ~0x7f~ 开头），根据这个方式，可以在调试的时候判断变量的位置。
@@ -154,6 +154,12 @@ dprintf 21, "%d iter, sum: %d\n", i, sum
 #+end_src
 
 也就是当运行到第 ~21~ 行的时候打印语句。这个方式其实和 printf 大法已经非常接近了。
+
+脚本如下执行：
+
+#+begin_src shell
+gdb -x <script-file>
+#+end_src
 
 ** Record-Replay
 gdb 默认是没有重播功能的，也就是“后退执行”。但是我们可以用 ~record~ 命令开启，并使用 ~reverse-next~ 来逆行。然后用 ~record stop~ 来关闭记录功能。
