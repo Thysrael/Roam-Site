@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       9b80a538-f6df-4139-bc11-dd0bbe73db5c
+:ROAM_ALIASES: Overlap Latency
 :END:
 #+title: Shadow Latency
 

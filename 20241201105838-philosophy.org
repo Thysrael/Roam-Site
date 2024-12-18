@@ -7,4 +7,5 @@
 - 关于思维的认识，辩证法：[[id:62a6dbe7-273e-4184-ab59-fac4554a9d34][Dialectics]]
 - 形而上学：[[id:a89907b0-9fdb-4d6d-adb5-4f061fc81059][MetaPhysics]]
 - 自组织性和元胞自动机：[[id:ed2cd337-0ff0-43a6-953a-990b698e2a67][Cellular Automata]]
+- 涌现：[[id:31168ada-879d-423d-867a-31dc150fcb57][Emergence]]
 - 异化：[[id:991db342-76ae-4044-b53b-c32e65cb686c][Alienation]]
