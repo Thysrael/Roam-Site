@@ -15,7 +15,7 @@
 - 配置：[[id:9d4a6a83-4386-4155-a2a9-9230d8ccc762][Git Config]]
 - 打包：[[id:e6ecd33f-2f2b-4126-a5b3-13823969eee3][Git Archive]]
 
-* Code hosting platforms
-这里记录一些代码托管平台相关笔记
+* Git Forge
+这里记录一些代码托管平台相关笔记。代码托管平台又被称作 Git Forge ，其中 Forge 是锻造坊、工作坊的意思。
 
 - [[id:de9e3146-021b-4bef-b844-c0eb67de0966][Github]]
