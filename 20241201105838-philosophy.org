@@ -9,3 +9,4 @@
 - 自组织性和元胞自动机：[[id:ed2cd337-0ff0-43a6-953a-990b698e2a67][Cellular Automata]]
 - 涌现：[[id:31168ada-879d-423d-867a-31dc150fcb57][Emergence]]
 - 异化：[[id:991db342-76ae-4044-b53b-c32e65cb686c][Alienation]]
+- 齐泽克与奶奶：[[id:b34bc8ea-0ea1-47ab-a66d-c4d0052c01ef][Zizek vs Grandma]]
