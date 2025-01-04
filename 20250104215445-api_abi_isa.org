@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       8aff2223-1971-459a-85dd-8c2c3ee36b9f
+:END:
+#+title: API, ABI, ISA
+
+我觉得这张图最能体现三种接口的层次，非常好：
+
+[[file:img/clipboard-20250104T220306.png]]

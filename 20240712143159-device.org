@@ -30,6 +30,7 @@
 
 - IPU MK2 的 inter-core 带宽是 5.5 GB/s ，共有 1472 个核，所以总带宽是 8,096 GB/s 。
 - HBM 4 的带宽是 1,638 GB/s 。
+- NVLink 的带宽是 800GB/s 。
 - DDR 4 3200 的带宽是 25.6 GB/s 。
 - IPU MK2 的 FLOPS 是 250~280 TFLOPS(10^{12}) ，即 265,000 GFLOPS 。
 - APPLE M2 GPU 是 3,600 GFLOPS 。
@@ -37,3 +38,4 @@
 - Intel i5-9600K 单核是 6.3 GFLOPS ，多核是 37.3 GFLOPS 。
 - Mate60 GPU 2,300 GFLOPS 。
 - Google TPUv4 是 275,000 GFLOPS 。
+- Intel i5-14500 CPU 是 5GHz ，也就是一个 cycle 是 0.2 ns 。

@@ -9,3 +9,4 @@
 - [[id:b7b7ca28-f309-4761-a3cb-ddad67978a72][KVM]]
 - [[id:deb8ffd4-7f33-4cf0-871f-dc9327d59221][Qemu]]
 - [[id:b79f9e4b-a9d3-4669-a808-6f8d79b804f0][VirtIO]]
+- [[id:7bba7732-e648-4c2a-a391-31b6b8054188][Type1 vs Type2]]
