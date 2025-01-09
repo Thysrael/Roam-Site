@@ -29,4 +29,4 @@ Arm 的名称非常混乱，这里理清一下：
 - [[id:bf0cfe73-a333-49f0-a0e8-f50f17358312][Arm CTR]]
 - [[id:da9c8247-86d6-415e-9466-2676df02725e][Arm Cache]]
 - [[id:0c247ea5-c714-408d-b54f-a6b01c3ac473][ARM PMU]]
-
+- [[id:c9f58688-dcae-4406-84b7-5f375dd6340b][ATF]]

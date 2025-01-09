@@ -105,6 +105,8 @@ Intel Scalable CPU 代际表格整理：
 | 2021 |    3 | Ice Lake(server) | 10nm     | Sunny Cove  |
 | 2023 |    4 | Sapphire Rapids  | 7nm      | Golden Cove |
 
+在 Lake 之前的架构是 Bridge 和 Well 架构。
+
 * 总结
 Intel 和 ARM 相爱相杀了半个世纪，回顾它们的角力，我们关注了处理器在位宽、安全、频率、架构、拓展指令集、工艺和市场等多个方面的较量。
 

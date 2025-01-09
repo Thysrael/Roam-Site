@@ -18,6 +18,8 @@ Stage1 Bootloader 主要是对于内存控制器的设置和对于安全的设�
 
 - [[id:3e44a83f-ded4-48eb-bcfb-21f79a57a21c][MBR]]
 
+在 UEFI 盛行以后，Stage1 Bootloader 就逐渐退出历史舞台了，这是因为 UEFI 可以直接加载 Stage2 的 Bootloader 。
+
 Stage2 Bootloader 主要负责加载内核：
 
 - [[id:7960b36a-4544-499a-b4c8-e8346b75805a][Uboot]]

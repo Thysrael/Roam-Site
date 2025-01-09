@@ -4,6 +4,12 @@
 #+title: Network Protocol
 
 * 协议
+协议栈如下：
+
+[[file:img/clipboard-20250106T195941.png]]
+
+协议如下：
+
 - [[id:e3d80e63-7d52-48f1-bec6-91be22591cb5][ARP]]
 - [[id:21746c83-9642-4003-b554-cd350f454810][DHCP]]
 - [[id:9dfd4159-455a-4440-9b4a-e54539b90c2d][Wi-Fi]]
