@@ -25,6 +25,8 @@
 - 漏洞的两种形式：[[id:cc120069-14be-4a51-a7f8-0f811400f91c][0Day vs NDay]]
 - 台式机与笔记本：[[id:b48d57e2-2278-4f36-b549-3a9f22764eef][Desktop vs Laptop]]
 - API, ABI 与 ISA: [[id:8aff2223-1971-459a-85dd-8c2c3ee36b9f][API, ABI, ISA]]
+- 登纳德缩放定律：[[id:cf6f6154-1c1b-4f43-8f52-e9307019731a][Dennard Scaling]]
+- 摩尔定律：[[id:2f60e6b1-9714-4ec4-a6fa-02bbbd9100ef][Moore's Law]]
 
 * Novel
 - [[id:b294a890-404e-4852-b565-096ccf1f1fa7][汪曾祺]]
