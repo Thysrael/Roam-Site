@@ -3,3 +3,4 @@
 :END:
 #+title: Microsoft
 
+- [[id:22b33b96-7ad6-4b55-aa24-ff9f2747b9d2][Azure]]
