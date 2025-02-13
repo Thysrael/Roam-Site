@@ -20,3 +20,4 @@
 - 网络协议分析工具：[[id:387483a1-c3ee-4135-850f-c2fd0a9c8a83][WireShark]]
 - 虚拟机：[[id:d580dda6-e826-4d03-be65-6743c8a364a5][VMWare]]
 - 数据图绘制工具：[[id:efd0ea25-f1e8-4777-8dfe-0c103dd7b262][GNUPlot]]
+- 文献管理工具：[[id:e29299a6-afef-4eb5-a105-fc66f978714b][Zotero]]
