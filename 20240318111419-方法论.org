@@ -8,6 +8,7 @@
 - 如何记笔记：[[id:880b2c98-b3a3-40c2-baa9-bbd0ad9e1a92][笔记方法论]]
 - 如何 debug ：[[id:dbe11e18-125c-401c-99f9-6edf7d387250][How to Debug]]
 - 文献管理：[[id:bfc431df-4459-4c33-8078-af0313e737c1][Paper Management]]
+- 与他人协作：[[id:e75b7446-18b9-4f38-b908-fc632d9f5b56][Collaborate]]
 
 * 项目管理
 - 结果偏移：[[id:ffa351db-766d-4d75-bc3f-afe2a67648ae][Result Offset]]
