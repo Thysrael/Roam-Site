@@ -7,8 +7,8 @@
 这里记录着工作环境的工具：
 
 - 编辑器：[[id:7ba3aeb8-f711-4fc8-aac6-5ef4fb647011][Emacs]]
-- 截屏软件：flameshot
-- 录屏软件：peek
+- 截屏软件：Flameshot
+- 录屏软件：Peek
 - 远端仓库：[[id:de9e3146-021b-4bef-b844-c0eb67de0966][Github]]
 - 输入法框架：[[id:63b2a6df-87d0-4189-a609-3de09b0866b4][Fcitx]]
 - 输入法：[[id:440c4422-026f-4499-9760-8983f38b4e02][Rime]]
@@ -21,3 +21,4 @@
 - 虚拟机：[[id:d580dda6-e826-4d03-be65-6743c8a364a5][VMWare]]
 - 数据图绘制工具：[[id:efd0ea25-f1e8-4777-8dfe-0c103dd7b262][GNUPlot]]
 - 文献管理工具：[[id:e29299a6-afef-4eb5-a105-fc66f978714b][Zotero]]
+- 家目录管理：[[id:850ddb03-55f4-47cc-92bb-6eb3e20c522e][XDG]]
