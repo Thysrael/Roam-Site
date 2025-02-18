@@ -8,3 +8,4 @@
 - [[id:e7a58c7d-6957-407e-9950-efbb520e9310][Elisp]]
 - [[id:7f77761b-f295-4434-9040-fb5538800981][Magit]]
 - [[id:662b1180-d1a7-4442-883a-6157b749cb85][Emacs Game]]
+- [[id:bcaa941e-624f-44c2-95e9-b0db1e495a28][Straight]]
