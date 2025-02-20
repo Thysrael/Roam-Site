@@ -5,7 +5,7 @@
 
 Org Archive 可以考虑按照结构归档，只需要执行如下代码（甚至利用文学编程，可以直接在此处执行）：
 
-来源[[https://gist.github.com/kepi/2f4acc3cc93403c75fbba5684c5d852d][在此]] 。
+来源 [[https://gist.github.com/kepi/2f4acc3cc93403c75fbba5684c5d852d][在此]] 。
 
 #+begin_src emacs-lisp :results none
 ;; org-archive-subtree-hierarchical.el

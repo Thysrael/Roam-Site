@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       0dddfec9-3d96-42fe-8bb5-4df9ed05e00c
+:END:
+#+title: Org Agenda
+
+* Clock
+可以使用 ~org-clock-display~ 来在 org-mode buffer 中显示任务总共的时间。
