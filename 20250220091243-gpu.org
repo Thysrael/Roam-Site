@@ -17,3 +17,12 @@
 | RTX 50 | Blackwell    |     2024 |
 
 顺便说一下，Ada 是第一个女程序员，Blackwell 是一个黑人数学家。此外更加详细的数据可以在 [[https://www.nvidia.cn/geforce/graphics-cards/compare/?section=compare-specs][官网]] 上看到。
+
+* 缓存结构
+最上层的是寄存器，每个硬件线程都有自己独立的寄存器。通常几十到几百个字节
+
+然后是 L1 Cache ，又被称为 Shared Memory ，可编程的部分被称为 Scratch Memory ，通常有几十 KB ，被一个 SM 核内的所限线程共享。
+
+然后是 L2 Cache ，是整个 GPU 的全局缓存，用于缓存来自所有 SM 加载和存储的数据。L2 缓存可以帮助减少到全局显存（Global Memory）的访问延迟。
+
+最后是 Global Memory ，也被称为显存（Video Memory, VRAM），是 GPU 的存储。通常采用 [[id:4d8b109f-f84b-476d-83f6-1c9c616d44c4][HBM]] 实现。

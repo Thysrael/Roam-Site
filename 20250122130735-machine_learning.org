@@ -92,7 +92,8 @@ Ensemble method 中文译名应该是“集成学习”。它通过组合多个�
 DL 的典型模型如下：
 
 - CNN
-- RNN
+- [[id:3cf528c9-514a-4d17-92db-7261eacc7410][RNN]]
+- [[id:853f9286-682b-463d-90f6-ff93a7bb8eb9][ResNet]]
+- [[id:f1e8a2c1-6283-4816-8532-7eea9c68c2b7][LLM]]
 - Autoencoders
-- Transformer
   

@@ -16,6 +16,8 @@
 - [[id:b79f9e4b-a9d3-4669-a808-6f8d79b804f0][VirtIO]]
 - [[id:7e75c925-b882-4665-a2ea-bc5207428147][TUN/TAP]]
 - [[id:02bfcd2e-c338-465e-b927-9a0c69fe7287][GPU]]
+- [[id:4d8b109f-f84b-476d-83f6-1c9c616d44c4][HBM]]
+- [[id:639f4c94-f842-4d48-a81d-e57539f89f2f][Unified Memory]]
 
 * 设备管理
 这里介绍对于设备的管理技术：

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       f1e8a2c1-6283-4816-8532-7eea9c68c2b7
+:END:
+#+title: LLM
+
+- [[id:3f59ec45-2231-4567-ba48-fd28fbf9db7a][Transformer]]
+- [[id:7072aa4a-2c58-4102-8c82-b6f9fb6fdcb9][MoE]]
+- [[id:7a8dce7d-cff7-4232-b7b1-1311e4e08822][Tokenizer]]

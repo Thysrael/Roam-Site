@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       3cf528c9-514a-4d17-92db-7261eacc7410
+:END:
+#+title: RNN
+
+循环神经网络（RNN, Recurrent Neural Network）中存在循环连接，隐藏层的输出会作为下一时间步的输入（时间维度上的反馈）。
+
+数学表达：
+
+\( h_t = \sigma(W_t h_t + W_x x_t + b)\)
+
+例如：LSTM, GRU 。需要注意 [[id:853f9286-682b-463d-90f6-ff93a7bb8eb9][ResNet]] 并不是。
