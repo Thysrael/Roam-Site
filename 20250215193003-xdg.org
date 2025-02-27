@@ -26,7 +26,6 @@ export NPM_CONFIG_TMP="$XDG_RUNTIME_DIR"/npm
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
 
 export ZSH="$XDG_DATA_HOME"/oh-my-zsh
-export ZDOTDIR="$XDG_CONFIG_HOME"/zsh
 #+end_src
 
 这种方式避免有些 APP 是先于 shell 登录的，如果在 shellrc 中设置，就来不及的问题。
@@ -34,8 +33,8 @@ export ZDOTDIR="$XDG_CONFIG_HOME"/zsh
 此外还些关于 zsh 的文件，我放到了 =/etc/zsh/zprofile= 中设置，如下所示：
 
 #+begin_src shell
-compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 export HISTFILE="$XDG_STATE_HOME"/zsh/history
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 #+end_src
 
 这些设置都是在 [[https://github.com/b3nj5m1n/xdg-ninja][xdg-ninja]] 软件的帮助下完成的。

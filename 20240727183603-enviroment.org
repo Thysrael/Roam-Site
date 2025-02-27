@@ -22,3 +22,5 @@
 - 数据图绘制工具：[[id:efd0ea25-f1e8-4777-8dfe-0c103dd7b262][GNUPlot]]
 - 文献管理工具：[[id:e29299a6-afef-4eb5-a105-fc66f978714b][Zotero]]
 - 家目录管理：[[id:850ddb03-55f4-47cc-92bb-6eb3e20c522e][XDG]]
+- Shell: [[id:574620a3-633f-4d25-b43b-b5974bf27b7e][ZSH]]
+- LSP Server: [[id:640c3f1f-30ec-49dd-9644-e27756d43196][PYRight]]

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       574620a3-633f-4d25-b43b-b5974bf27b7e
+:END:
+#+title: ZSH
+
+ZSH 的配置非常恶心，所以姑且记录一下：
+
+首先我们最好不要修改 ~$ZDOTFILE~ 这个环境变量来改变 =.zshrc= 的位置，因为这样我们使用 [[id:dc3d220f-6007-4c3f-a7f3-b205c3c2b966][Ssh]] 的时候并不会读取这个变量，导致每次登录都会重新创建 =~/.zshrc= 这个文件。
+
+但是其他配置文件，比如说插件文件，本质上都是在 =.zshrc= 中 ~source~ ，所以可以修改位置。
+
+zsh 只有在有 ~history~ 文件的时候才能实现自动补全功能，这个变量由 ~$HISTFILE~ 控制。此外补全还依赖 compdump 文件，这个变量由 ~$ZSH_COMPDUMP~ 控制。
+
+~$ZSH~ 变量其实是 oh-my-zsh 的变量，也可以修改。

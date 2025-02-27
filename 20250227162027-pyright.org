@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       640c3f1f-30ec-49dd-9644-e27756d43196
+:END:
+#+title: PyRight
+
+pyright 是 [[id:c7a6fb83-aaa7-485c-b32b-93ef16b7affa][Python]] 的 LSP Server ，它的配置文件 =pyrightconfig.json= 在项目根目录下，其内容大致如下：
+
+#+begin_src javascript
+{
+  "executionEnvironments": [
+    {
+      "extraPaths": [
+        "python"
+      ]
+    }
+  ],
+  "verboseOutput": true,
+  "venv": "venv",
+  "venvPath": "."
+}
+#+end_src
+
+其中 ~executionEnvironments~ 记录着源码的路径，而 ~venv~ 记录着虚拟环境的路径。

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       82fd65b0-c6c0-4ed0-9c6b-bf67ee9c1dc8
+:END:
+#+title: Conda vs Pip
+
+* 包管理器
+
+* Conda
+
+* Pip
