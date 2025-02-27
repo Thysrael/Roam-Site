@@ -24,3 +24,4 @@
 
 * 知识
 - [[id:427744f1-ced1-4e5c-8a8c-feb91d6a7b69][Epoch vs Batch]]
+- [[id:31168ada-879d-423d-867a-31dc150fcb57][Emergence]]
