@@ -4,7 +4,101 @@
 #+title: Conda vs Pip
 
 * 包管理器
+Python 的包管理器都具有隔离的功能，而且都非常明显，总是要激活一个虚拟环境的。但是都没有 lock 文件的功能，这也是他们总是需要虚拟环境的原因，因为项目无法根据像 =package.json, package.lock= 等文件来确定依赖。
 
 * Conda
+~conda~ 是 Anaconda 的包管理器，Anaconda 是一个 *数据科学与机器学习工具集的发行版* ，这个工具集中不止有 python 的软件包，还有 ~R, Ruby, Lua, Scala~ 之类的软件包。
+
+所以 ~conda~ 并不只是一个 python 包的管理器，只是恰好可以下载 python 包罢了，它支持一系列命令，如：
+ 
+#+begin_src shell
+# 更新 Conda 自身
+conda update conda
+# 创建一个新的环境
+conda create --name myenv
+# 创建一个带指定 Python 版本的环境
+conda create --name myenv python=3.8
+# 激活环境
+conda activate myenv
+# 停用当前环境
+conda deactivate
+# 列出所有环境
+conda env list
+# 删除环境
+conda remove --name myenv --all
+# 安装包
+conda install package_name
+# 从特定通道安装包
+conda install -c channel_name package_name
+# 更新包
+conda update package_name
+# 删除包
+conda remove package_name
+#+end_src
+
+此外在 ~conda~ 虚拟环境中是可以使用 ~pip~ 来安装软件包的，安装的软件包同样会被 ~conda~ 监管。
+
+在实际使用的时候我们一般使用 ~miniconda~ ，它只包括 ~conda~ 和 ~python~ ，以及其基本的依赖。而 Anaconda 预装了很多软件包。
 
 * Pip
+~pip~ 并不创建隔离环境的能力，需要依赖 python 自带的 ~venv~ 模块：
+
+#+begin_src shell
+# 创建一个名为 myenv 的虚拟环境
+python3 -m venv myenv
+# 激活这个虚拟环境
+source myenv/bin/activate
+# 退出虚拟环境
+deactivate
+#+end_src
+
+激活环境后，就可以使用 ~pip~ 了，如下所示：
+
+#+begin_src shell
+# 升级 pip 到最新版本
+python -m pip install --upgrade pip
+# 安装包
+pip install package_name
+# 安装指定版本的包
+pip install package_name==1.0.0
+# 升级已安装的包到最新版本
+pip install --upgrade package_name
+# 卸载包
+pip uninstall package_name
+# 查看已安装的包列表
+pip list
+# 查看可升级的包
+pip list --outdated
+# 搜索包
+pip search package_name
+# 显示包的详细信息
+pip show package_name
+# 导出当前环境的所有包到 requirements.txt 文件
+pip freeze > requirements.txt
+# 从 requirements.txt 文件安装所有包
+pip install -r requirements.txt
+#+end_src
+
+* Python Version
+除了软件包以外，python 的版本也很重要。特定版本的 python 下可以运行的软件包，可能切换成了另一个版本的 python 上就行不通了。
+
+使用 ~conda~ 可以指定 python 的版本：
+
+#+begin_src shell
+conda create --name myenv python=3.8
+#+end_src
+
+而 ~pyenv~ 也可以管理 python 的版本，如下所示：
+
+#+begin_src shell
+pyenv install 3.8.0
+pyenv global 3.8.0
+pyenv local 3.8.0
+pyenv versions
+#+end_src
+
+这两种方法我都不用，而是直接在 [[id:8210f9ca-154c-4102-b60e-64f4fa1c7773][ArchLinux]] 上安装多个版本的 python ，如果有需要使用低版本的 python ，那么就在命令行中使用：
+
+#+begin_src shell
+python3.11 -m venv venv
+#+end_src
