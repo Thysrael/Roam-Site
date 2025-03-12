@@ -14,7 +14,7 @@ Python 还是太全面了~
 
 * 工具
 - 包管理器：[[id:82fd65b0-c6c0-4ed0-9c6b-bf67ee9c1dc8][Conda vs Pip]]
-- 构建：[[id:72b64de1-78e7-4f49-ac91-0d04d2858c82][Python Build]]
+- 构建与发布：[[id:72b64de1-78e7-4f49-ac91-0d04d2858c82][Python Build]]
 
 * 元编程
 - 装饰器：[[id:14647b81-6676-4ff0-af88-e7af3dc545dc][Python Decorator]]
