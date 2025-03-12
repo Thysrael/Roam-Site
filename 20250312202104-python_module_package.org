@@ -1,0 +1,58 @@
+:PROPERTIES:
+:ID:       25f5aae7-9ca2-4b4e-8236-1387ab9eede9
+:END:
+#+title: Python Module Package
+
+* Module Import
+在 python 中，module 可以理解为一个“函数库”文件，里面就和正常的 python 文件一样。
+
+我们用 ~import~ 命令来引用它。当我有一个名为 =lib.py= 的文件：
+
+#+begin_src shell
+def fib(n):    # write Fibonacci series up to n
+    a, b = 0, 1
+    while a < n:
+        print(a, end=' ')
+        a, b = b, a+b
+    print()
+
+global_value = 3
+
+print("Hello, Module Lib")
+print("__name__: " + __name__)
+#+end_src
+
+我按照如下格式引用：
+
+#+begin_src shell
+import lib
+
+lib.fib(2)
+print(lib.global_value)
+#+end_src
+
+可以看到当我们希望使用其中的函数或者全局变量时，还是需要先指出它属于 ~lib~ 这个 module ，这主要是因为这样可以不污染 ~main~ 的命名空间。
+
+当然如果这样太麻烦的话，也可以使用如下语法引入：
+
+#+begin_src python
+from lib import fib
+
+fib(2)
+#+end_src
+
+不过这样就有污染命名空间的嫌疑，所以我们可以给它起个别名：
+
+#+begin_src python
+from lib import fib as main_fib
+
+main_fib(2)
+#+end_src
+
+按照我的理解，module 会在 ~import~ 的时候被 eval ，如下所示，所以即使在 =main.py= 下只有一个 ~import~ 语句，那么也依然会有如下输出：
+
+#+begin_src python
+import lib
+# Hello, Module fib
+# __name__: fib
+#+end_src
