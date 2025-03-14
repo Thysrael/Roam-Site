@@ -5,6 +5,7 @@
 
 其实是并行和分布式（distribute）
 
+* 概念
 - 互斥锁和自选锁：[[id:ca5c7436-c30b-49a8-9521-87f495d4afee][Mutex vs Spinlock]]
 - 悲观锁和乐观锁： [[id:ad55bb19-61e7-4f0e-acbd-cb289cc58e28][Optimistic Lock vs Pessimistic Lock]]
 - 信号量：[[id:a79b65ec-7b50-408f-84ca-5cdb3d83d3da][Semaphore]]
@@ -13,3 +14,7 @@
 - 两阶段锁：[[id:bbecfbe8-ba3b-4977-ba56-5f53aedbbfde][2PL]]
 - 隐藏延迟：[[id:9b80a538-f6df-4139-bc11-dd0bbe73db5c][Shadow Latency]]
 - 尾延迟：[[id:aa3fc84f-b9a5-40bc-9562-73c76dfddc52][Tail Latency]]
+
+* 分布式通信库
+- [[id:d3bd3bc2-91f2-4396-b1da-295c97c588e4][NCCL]]
+- [[id:2db6d989-60a9-4afe-a719-92b5516568aa][GLOO]]

@@ -22,7 +22,10 @@
 
 正如机器学习可以助力 AI 在其他方面的功能，LLM 也可以助力深度学习在其他方面的不足。这种助力是极其豪横的。也就是说，一个极其强大的自然语言处理模型（LLM），看上去只要继续发展，就可以解决全部的 AI 问题。
 
-* 知识
+* 概念
 - [[id:427744f1-ced1-4e5c-8a8c-feb91d6a7b69][Epoch vs Batch]]
 - [[id:31168ada-879d-423d-867a-31dc150fcb57][Emergence]]
 - [[id:8d5d2f04-e1d1-4c9b-a0ad-517f8472d6f7][Quantization]]
+
+* 框架
+- [[id:7b75688d-e1ee-4ce3-85e7-61f4f0b854ce][PyTorch]]

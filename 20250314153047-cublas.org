@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       c797e9f8-5a74-4757-9a52-eb2a0fc09209
+:END:
+#+title: cuBLAS
+
+cuBLAS 是 NVIDIA 提供的用于其 GPU 加速器上的高性能基本线性代数子程序库（Basic Linear Algebra Subprograms）的实现。
