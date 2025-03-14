@@ -35,7 +35,7 @@ A800/H800 是针对中国特供版（低配版），相对于 A100/H100，主要
 上图的 Tensor Flow 应该指的是 Tensor Core 而不是 Cuda Core 的算力。
 
 * Tensor Core
-Tensor Core 是在 Volta 架构中引入的一个计算单元，同样位于 SM 核心内。它专注于优化矩阵乘法（GEMM）的时延和能耗。最初的 Tensor Core 就可以在一个周期内完成 4 x 4 的矩阵乘法和累加运算，如下所示：
+[[id:9fe948a0-18ee-4afb-8413-c597185f8884][Tensor Core]] 是在 Volta 架构中引入的一个计算单元，同样位于 SM 核心内。它专注于优化矩阵乘法（GEMM）的时延和能耗。最初的 Tensor Core 就可以在一个周期内完成 4 x 4 的矩阵乘法和累加运算，如下所示：
 
 [[file:img/clipboard-20250302T141619.png]]
 
@@ -62,4 +62,3 @@ Tensor Core 是在 Volta 架构中引入的一个计算单元，同样位于 SM 
 
 - 计算资源不充分：比如说某个 SM 上之后 4 个 SFU ，而一个 warp 有 32 个线程，那么显然需要 8 个 cycle 才能执行完，而不是 1 个 cycle 就可以执行完。
 - 条件分支（divergence）：也就是一部分线程走在 ~if~ 分支，而另外的部分走在 ~else~ 分支。
-

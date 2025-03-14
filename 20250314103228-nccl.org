@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       d3bd3bc2-91f2-4396-b1da-295c97c588e4
+:END:
+#+title: NCCL
+
+NCCL（读作 "Nickel"）全称是 NVIDIA Collective Communications Library，是一种分布式通信的库。
+
+它支持多种集体通信操作，如 Broadcast、Reduce、All-Reduce、Gather、Scatter 等
+
+我们可以使用 ~torch.distributed~ 来调用这些操作

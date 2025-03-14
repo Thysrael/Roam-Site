@@ -26,6 +26,8 @@ export NPM_CONFIG_TMP="$XDG_RUNTIME_DIR"/npm
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
 
 export ZSH="$XDG_DATA_HOME"/oh-my-zsh
+
+export DOTNET_CLI_HOME="$XDG_DATA_HOME"/dotnet
 #+end_src
 
 这种方式避免有些 APP 是先于 shell 登录的，如果在 shellrc 中设置，就来不及的问题。
