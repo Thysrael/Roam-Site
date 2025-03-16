@@ -6,7 +6,7 @@
 * NVIDIA
 [[id:0c386c84-3124-4b29-90a6-cdba36c4bf00][NVIDIA]] 家的 GPGPU 架构如下所示：
 
-[[file:img/nvdia-gpu.png][img:nvidia-gpgpu]]
+[[file:img/nvdia-gpu.png]]
 
 需要注意这些是 GPGPU ，而对于普通 GPU ，则有：
 
@@ -17,6 +17,17 @@
 | RTX 50 | Blackwell    |     2024 |
 
 顺便说一下，Ada 是第一个女程序员，Blackwell 是一个黑人数学家。此外更加详细的数据可以在 [[https://www.nvidia.cn/geforce/graphics-cards/compare/?section=compare-specs][官网]] 上看到。
+
+此外，除了以科学家的身份命名外，GPU 架构还有数字命名，比如说：
+
+- Kepler (sm30, sm35, sm37)
+- Maxwell (sm50, sm52, sm53)
+- Pascal (sm60, sm61)
+- Volta (sm70)
+- Turing (sm75)
+- Ampere (sm80)
+- Ada (sm89)
+- Hopper (sm90a)
 
 * 缓存结构
 最上层的是寄存器，每个硬件线程都有自己独立的寄存器。通常几十到几百个字节
