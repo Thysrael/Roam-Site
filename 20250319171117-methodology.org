@@ -1,7 +1,7 @@
 :PROPERTIES:
-:ID:       faa09ef8-bc14-4f41-a501-0cc81318b884
+:ID:       4ee0252f-cdcb-4286-a546-1a87201fe718
 :END:
-#+title: 方法论
+#+title: Methodology
 #+filetags: :root:
 
 * 知识管理
@@ -9,6 +9,8 @@
 - 如何 debug ：[[id:dbe11e18-125c-401c-99f9-6edf7d387250][How to Debug]]
 - 文献管理：[[id:bfc431df-4459-4c33-8078-af0313e737c1][Paper Management]]
 - 与他人协作：[[id:e75b7446-18b9-4f38-b908-fc632d9f5b56][Collaborate]]
+- 如何写综述：[[id:1f65d984-08ae-4a21-9ab1-76c3699d35d7][Survey Review]]
 
 * 项目管理
 - 结果偏移：[[id:ffa351db-766d-4d75-bc3f-afe2a67648ae][Result Offset]]
+

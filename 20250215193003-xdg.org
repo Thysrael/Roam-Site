@@ -3,6 +3,7 @@
 :END:
 #+title: XDG
 
+* Dotfile
 XDG 是一套指导各种 APP 的文件在家目录下存放位置的规范，通过环境变量设置。
 
 在 Archlinux 中，默认是不设置它们的，所以需要我们手动设置。我把它放在了 =/etc/profile= 下，因为各种 shell 都会用到这些变量：
@@ -40,3 +41,6 @@ export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 #+end_src
 
 这些设置都是在 [[https://github.com/b3nj5m1n/xdg-ninja][xdg-ninja]] 软件的帮助下完成的。
+
+* Default Dir
+像 =desktop= 和 =download= 这种默认文件夹的位置，都是在 =~/.config/user-dirs.dirs= 这个文件中记录着。

@@ -8,7 +8,7 @@
 
 引入树形结构会让 Roam 变得更加杂乱且有些生硬。如果不喜欢可以点击左上角 =Filter ==> Tag filters ==> Add tag to tag blocklist= 过滤 =root= 标签。
 
-- [[id:faa09ef8-bc14-4f41-a501-0cc81318b884][方法论]]
+- [[id:4ee0252f-cdcb-4286-a546-1a87201fe718][Methodology]]
 - [[id:e424f62d-8e62-4e91-86b3-0ca2f615ab4c][Story]]
 - [[id:a64a206b-3db3-4401-bce3-54ed5bc5ab2b][Work]]
 - [[id:a9f007fa-a472-403b-b628-627eea16d3b6][Study]]

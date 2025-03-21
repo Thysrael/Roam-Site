@@ -3,3 +3,34 @@
 :END:
 #+title: LaTeX
 
+* 代码高亮
+~Minted~ 包简单高效，不要用 ~listings~ 这个包，非常复杂。
+
+引用包：
+
+#+begin_src latex
+\usepackage{minted}
+#+end_src
+
+行间代码：
+
+#+begin_src latex
+\begin{minted}{c}
+int main() {
+printf("hello, world");
+return 0;
+}
+\end{minted}
+#+end_src
+
+行内代码：
+
+#+begin_src latex
+\mintinline{python}{print(x**2)}
+#+end_src
+
+引用代码文件：
+
+#+begin_src latex
+\inputminted{python}{t1.py}
+#+end_src

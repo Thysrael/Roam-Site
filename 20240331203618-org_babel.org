@@ -14,3 +14,12 @@ Org Babel 加载 ~gnuplot~ 时会消耗大量的时间，而且平时是不会�
                        (gnuplot . t)
                        ))))))
 #+end_src
+
+* C 语言
+可以使用如下写法，来保证写的时候不需要麻烦的 ~main~ 函数：
+
+#+begin_src C :main yes :includes <stdio.h>
+printf("Hello, world\n");
+#+end_src
+
+

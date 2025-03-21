@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       1f65d984-08ae-4a21-9ab1-76c3699d35d7
+:END:
+#+title: Survey Review
+
+Survey 最重要的是对研究进行 *分类* 和 *发展梳理* 。
+
+一项研究，关键是作者、年份、设计、效果。
