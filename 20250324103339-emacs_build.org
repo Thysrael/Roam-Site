@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       c3edd551-51d0-4f51-ba0a-8418d0725e28
+:END:
+#+title: Emacs Build
+
+#+begin_src shell
+wget https://ftp.gnu.org/pub/gnu/emacs/emacs-30.1.tar.xz
+./configure --without-x --without-gnutls --without-pop --without-sound
+#+end_src
