@@ -4,6 +4,7 @@
 #+title: 金瓶梅
 
 #+STARTUP: nonum
+#+STARTUP: overview
 
 * 人物
 ** 西门庆

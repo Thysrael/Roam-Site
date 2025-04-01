@@ -3,7 +3,32 @@
 :END:
 #+title: Emacs Build
 
+* 构建 Emacs
+使用如下命令：
+
 #+begin_src shell
 wget https://ftp.gnu.org/pub/gnu/emacs/emacs-30.1.tar.xz
-./configure --without-x --without-gnutls --without-pop --without-sound
+./configure --without-x --without-gnutls --without-pop --without-sound --with-tree-sitter --without-native-compilation
+#+end_src
+
+* 构建 Tree-sitter
+使用如下命令：
+
+#+begin_src shell
+git clone git@github.com:tree-sitter/tree-sitter.git
+cd tree-sitter/
+make
+make install
+export LD_LIBRARY_PATH=/usr/local/lib/
+sudo ldconfig # update the ld cache
+#+end_src
+
+* 配置文件
+不要寄希望于 [[id:bcaa941e-624f-44c2-95e9-b0db1e495a28][Straight]] 自己下载了，需要拷贝 =straight/repos/=, =tree-sitter= 。
+
+* LSP
+[[id:8e3d5527-8c90-4c7b-a0ea-34d6b2e8ed3d][Ubuntu]] 常常无法用 ~apt~ 安装 lsp server ，此时就可以用 [[id:a33dc090-f33e-4442-8ec4-462f79051773][Snap]] 进行安装，如：
+
+#+begin_src shell
+sudo snap install pyright --classic
 #+end_src

@@ -29,6 +29,7 @@
 - 摩尔定律：[[id:2f60e6b1-9714-4ec4-a6fa-02bbbd9100ef][Moore's Law]]
 - 窗口：[[id:c3b208a3-e571-495f-b7fb-507b93f3c144][Window]]
 - 脉动阵列与张量核：[[id:9fe948a0-18ee-4afb-8413-c597185f8884][Systolic Array vs Tensor Core]]
+- 不可变性：[[id:d244a7b7-3703-420d-bce4-2ea26adf631a][Immutability]]
 
 * Novel
 - [[id:b294a890-404e-4852-b565-096ccf1f1fa7][汪曾祺]]
