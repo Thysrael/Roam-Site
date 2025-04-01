@@ -20,3 +20,4 @@
 - [[id:4ec68c60-635c-4b0a-89bd-f50a5f32f915][Architecture]]
 - [[id:720c8d1d-9567-44ff-853a-80196da3edf1][Communication]]
 - [[id:4824116c-8516-4f45-95b2-06ca6d767551][Philosophy]]
+- [[id:20a71e0c-76f1-4033-ac2b-fccfeff95317][Algorithm]]

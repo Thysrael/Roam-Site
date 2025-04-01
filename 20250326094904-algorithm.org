@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       20a71e0c-76f1-4033-ac2b-fccfeff95317
+:END:
+#+title: Algorithm
+
+- [[id:4b43a52b-cc16-489f-bde7-f0994750168b][DP]]
