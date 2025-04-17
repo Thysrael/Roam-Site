@@ -99,6 +99,6 @@ rsync -anvPh /source/project/ /destination/project/ --include='**.gitignore' --e
 
 这种命令简直就是 [[id:3faf56b4-cecd-4db0-8e2c-ef54375a2f42][Git Pull]] 同步方案的简化版，相比于原版，只需要一个命令搞定，而且有的时候还不需要建立仓库，更加灵活。非常适合处理急活儿。
 
-但是 rsync 的 filter 并不一定能正确理解 gitignore 文件，所以严格意义上说，这种方法存在风险。但是具体在哪里存在风险，我就不知道了，具体的讨论可以看[[https://stackoverflow.com/questions/13713101/rsync-exclude-according-to-gitignore-hgignore-svnignore-like-filter-c][这里]]。所以在有条件的情况下，还是应当使用 Git Pull 同步方案。
+但是 rsync 的 filter 并不一定能正确理解 gitignore 文件（比如说它好像不理解 ~!~ ），所以严格意义上说，这种方法存在风险。此外如果用 ~git ls~ 的方式去探测 ingore 的文件，那么只会探测到实际上这个目录中 exist 而未被 track 的文件，但是这种方式会忽略那些实际并不 exist 但是在 gitignore 文件中出现的文件，所以也有问题，具体的讨论可以看 [[https://stackoverflow.com/questions/13713101/rsync-exclude-according-to-gitignore-hgignore-svnignore-like-filter-c][这里]] 。所以在有条件的情况下，还是应当使用 Git Pull 同步方案。
 
 考虑到很多项目都来源于他人的 Github 项目，所以这种情况下使用 Git 是在所难免的，这种两个工具的不协调也导致了 rsync 的失宠。
