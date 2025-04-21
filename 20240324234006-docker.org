@@ -50,31 +50,31 @@ docker inspect <CONTAINER>
 执行命令/进入容器
 
 #+begin_src shell
-    docker exec -it <CONTAINER> /bin/bash
-    docker exec -it <CONTAINER> bash -c "COMMAND"
+docker exec -it <CONTAINER> /bin/bash
+docker exec -it <CONTAINER> bash -c "COMMAND"
 #+end_src
 
 状态转换
 
 #+begin_src shell
-  docker stop <CONTAINER>  
-  docker start <CONTAINER>  
-  docker kill <CONTAINER>  
-  docker restart <CONTAINER>
+docker stop <CONTAINER>  
+docker start <CONTAINER>  
+docker kill <CONTAINER>  
+docker restart <CONTAINER>
 #+end_src
 
 在宿主机和拷贝
 
 #+begin_src shell
-  docker cp <CONTAINER> <HOST_PATH> <CONTAINER>:<CONTAINER_PATH>
-  docker cp <CONTAINER> <CONTAINER>:<CONTAINER_PATH> <HOST_PATH>
+docker cp <CONTAINER> <HOST_PATH> <CONTAINER>:<CONTAINER_PATH>
+docker cp <CONTAINER> <CONTAINER>:<CONTAINER_PATH> <HOST_PATH>
 #+end_src
 
 导入/导出
 
 #+begin_src shell
-  docker export <CONTAINER> -o <name>.tar
-  docker import <name>.tar - <Container Name>
+docker export <CONTAINER> -o <name>.tar
+docker import <name>.tar - <Container Name>
 #+end_src
 
 删除容器：

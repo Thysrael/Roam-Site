@@ -8,6 +8,8 @@
 
 #+begin_src shell
 wget https://ftp.gnu.org/pub/gnu/emacs/emacs-30.1.tar.xz
+tar xvf emacs-30.1.tar.xz
+cd emacs-30.1
 ./configure --without-x --without-gnutls --without-pop --without-sound --with-tree-sitter --without-native-compilation
 #+end_src
 
@@ -18,7 +20,7 @@ wget https://ftp.gnu.org/pub/gnu/emacs/emacs-30.1.tar.xz
 git clone git@github.com:tree-sitter/tree-sitter.git
 cd tree-sitter/
 make
-make install
+make install PREFIX="~/.local"
 export LD_LIBRARY_PATH=/usr/local/lib/
 sudo ldconfig # update the ld cache
 #+end_src

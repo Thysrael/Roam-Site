@@ -4,3 +4,4 @@
 #+title: Algorithm
 
 - [[id:4b43a52b-cc16-489f-bde7-f0994750168b][DP]]
+- [[id:3e71741b-78bb-4fad-8bac-5e5f4e21e04b][Linear Programming]]

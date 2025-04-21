@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       3e71741b-78bb-4fad-8bac-5e5f4e21e04b
+:END:
+#+title: Linear Programming
+
+* 概念
+线性规划（Linear Programming）由以下元素组成：
+
+- 1 个目标函数（Objective Function）
+- n 个决策变量（Variable）
+- m 个不等式约束（Constraint）组成
+
+有多个变量，就说明规划空间有多少个维度，而有多少个约束，就有多少个超平面。
+
+每个线性规划都可以转换成标准型（Strandard Form），对于标准型的 PL 的求解，我们一般会采用单纯型法（Simplex）来求解，而单纯型法，需要将标准型转换成不同的松弛型（Slack Form）。
+
+松弛型（Slack Form）的本质是通过引入松弛变量（Slack Variable）将原本的不等式约束转换成等式约束。并通过不断换入换出松弛变量，来达到优化目的。
+
+标准型的 PL 都存在对偶（Duality）问题，这种对偶问题本质是拉格朗日（Lagrangian）乘子法在“线性规划”下的一个特例。
+
+* 标准型
+线性规划的标准型如下所示：
+
+$$
+\max C^{T}x
+Ax \leq b
+x \geq 0
+$$
+
+为了将普通 PL 转换成 Standard PL ，需要进行如下转化：

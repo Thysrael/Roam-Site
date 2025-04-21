@@ -10,3 +10,5 @@ Capability 常用于微内核之中，这是因为为了分担内核的工作，
 
 * 安全设计
 Capability 的安全设计更加独立，不再有“覆盖”的概念，详见 [[id:a12d0c4c-921f-4302-b205-78f0da8635ab][Hierarchical vs Capability]] 。
+
+此外传统的安全模式是“隐式的、全局的”，比如说 [[id:2b0578d1-ed79-4fd4-838c-672dcc151b6e][Unix]] 提出的 user, group 抽象，程序本身的权限取决于程序调用者的权限，这就很容易出现混淆。而 capability 则是“显式的、细粒度的”。

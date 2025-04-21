@@ -36,7 +36,18 @@ conda update package_name
 conda remove package_name
 #+end_src
 
-此外在 ~conda~ 虚拟环境中是可以使用 ~pip~ 来安装软件包的，安装的软件包同样会被 ~conda~ 监管。
+此外在 ~conda~ 虚拟环境中是可以使用 ~pip~ 来安装软件包的，安装的软件包同样会被 ~conda~ 监管。但是要注意如果在 =~/.local/bin/= 下有 ~pip~ ，是有可能使用 local pip 的，此时安装的包会被安装到 local 环境，所以要用如下命令核查：
+
+#+begin_src shell
+which python
+#+end_src
+
+如果还是不放心，可以先安装一个小包，检验它的安装目录：
+
+#+begin_src shell
+pip install tqdm
+pip show tqdm
+#+end_src
 
 在实际使用的时候我们一般使用 ~miniconda~ ，它只包括 ~conda~ 和 ~python~ ，以及其基本的依赖。而 Anaconda 预装了很多软件包。
 
@@ -102,3 +113,6 @@ pyenv versions
 #+begin_src shell
 python3.11 -m venv venv
 #+end_src
+
+* Wheel
+我个人理解 wheel 是编译好用于分发的二进制文件，它的后缀名是 =.whl= ，但是为什么 python 还有编译过程？这是因为有些 Python 包中有 [[id:a209fbd7-ef3d-4796-895a-c080dd44190e][C]] 或者 [[id:ab518d02-b179-4173-adfa-0bed5591ae81][C++]] 拓展，所以编译好再分发，就避免了客户端的编译。
