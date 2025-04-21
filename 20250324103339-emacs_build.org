@@ -34,3 +34,12 @@ sudo ldconfig # update the ld cache
 #+begin_src shell
 sudo snap install pyright --classic
 #+end_src
+
+这种方法其实还是太麻烦了，最简单的方法是用 [[id:82fd65b0-c6c0-4ed0-9c6b-bf67ee9c1dc8][Conda vs Pip]] 来安装，如：
+
+#+begin_src shell
+pip install pyright
+#+end_src
+
+* App Image
+白努力了这么半天，后来发现可以使用 AppImage ，在这个 [[https://github.com/blahgeek/emacs-appimage][链接]] 下载。

@@ -116,3 +116,15 @@ python3.11 -m venv venv
 
 * Wheel
 我个人理解 wheel 是编译好用于分发的二进制文件，它的后缀名是 =.whl= ，但是为什么 python 还有编译过程？这是因为有些 Python 包中有 [[id:a209fbd7-ef3d-4796-895a-c080dd44190e][C]] 或者 [[id:ab518d02-b179-4173-adfa-0bed5591ae81][C++]] 拓展，所以编译好再分发，就避免了客户端的编译。
+
+* 不只是 Python
+不知道为什么，用 python 包管理器是可以安装一些完全和 python 没有啥关系的东西，比如说：
+
+#+begin_src shell
+pip install pyright
+pip install cmake
+#+end_src
+
+我觉得这个性质很有用，是因为在服务器上常常没有 ~root~ 权限，而且也没法用 [[id:074dc125-7f79-49de-b685-dd71657e7129][Docker]] ，所以安装很多东西都非常不方便。这个时候用 python 包管理器来安装就很方便了。
+
+从这个角度看，虽然 ~conda~ 比 ~pip venv~ 要笨重，但是它可以安装各种其他语言的包，更加方便。我在实践中遇到了一个需要安装 ~python3-dev~ 的需求，但是没法 ~sudo~ ，用 ~pip venv~ 没有办法解决，而用 ~conda~ 根本没有需要解决。
