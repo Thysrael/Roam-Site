@@ -24,4 +24,4 @@
 - 家目录管理：[[id:850ddb03-55f4-47cc-92bb-6eb3e20c522e][XDG]]
 - Shell: [[id:574620a3-633f-4d25-b43b-b5974bf27b7e][ZSH]]
 - LSP Server: [[id:640c3f1f-30ec-49dd-9644-e27756d43196][PYRight]]
-- 终端模拟器: [[id:d16de167-000c-415c-984a-9f04654a1733][Kitty]]
+- 终端模拟器: [[id:d16de167-000c-415c-984a-9f04654a1733][Kitty]], [[id:39bd1249-bef4-4725-bc08-eb84322f858c][Konsole]]

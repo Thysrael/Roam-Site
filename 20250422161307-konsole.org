@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       39bd1249-bef4-4725-bc08-eb84322f858c
+:END:
+#+title: Konsole
+
+Konsole 和 Yakuake 使用类似的键位。
+
+- ~C-S-t~: new session
+- ~C-S-r~: close session
+- ~S-<arrow>~: move between session
+- ~C-(~: split vertically
+- ~C_)~: split horizontally

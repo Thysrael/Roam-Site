@@ -3,6 +3,12 @@
 :END:
 #+title: LLM
 
+* Architecture
 - [[id:3f59ec45-2231-4567-ba48-fd28fbf9db7a][Transformer]]
 - [[id:7072aa4a-2c58-4102-8c82-b6f9fb6fdcb9][MoE]]
+
+* Components
 - [[id:7a8dce7d-cff7-4232-b7b1-1311e4e08822][Tokenizer]]
+- [[id:f87f113d-5b9d-439c-ab10-fbccbfa48da6][KV Cache]]
+
+* Model Family
