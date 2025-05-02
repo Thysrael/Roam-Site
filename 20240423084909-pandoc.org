@@ -42,7 +42,7 @@ end
 相比于 markdown 或者 org-mode 的各种不适应，office 的 docx 或者 pptx 却意外好用。基本上转换后调整格式就好了额，数学公式和代码块都有非常好的处理。
 
 * 用例
-** 将 Org 文件转换成 GFM
+** Org to GFM
 如下所示：
 
 #+begin_src shell
@@ -65,3 +65,20 @@ echo "$md_file done"
 #+end_src
 
 但是最符合标准的转换还是需要 typora 的辅助，因为图片的位置有些缺憾。正因如此， gfm2org 就更难开发了。
+
+** Org to Docx
+首先需要在 org-mode 文件的头部增加如下选项，避免 pandoc 将较深层次的标题转换成列表：
+
+#+begin_src org
+#+OPTIONS: H:9
+#+end_src
+
+然后我研究了很久，发现并没有办法控制图片的居中显示和大小还有页眉页脚，所以我觉得不如先让 pandoc 进行文本的转换，然后再调整细节。
+
+docx 的生成严格依赖于它的模板，我费尽心力（乐，调了 2 个小时，记录在 [[id:74045156-930a-4ac9-87b1-65b7dcd76011][Office]] 中了）终于把它们都调整好了（在 Memland 项目中），当我们有模板时，就可以使用如下命令了：
+
+#+begin_src shell
+pandoc ./xxx.org --reference-doc=template.docx -o xxx.docx
+#+end_src
+
+pandoc 在代码高亮，数学公式，行内代码都可以工作正常。
