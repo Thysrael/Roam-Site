@@ -54,8 +54,8 @@ A800/H800 是针对中国特供版（低配版），相对于 A100/H100，主要
 
 * 汇编
 + NVIDIA
-  - PTX (Parallel Thread Execution): PTX 是 NVIDIA 为其 CUDA 平台设计的中间汇编语言。PTX 代码通常不会直接编写，而是由 CUDA 源代码编译生成的中间表示。它用于为不同 NVIDIA GPU 生成机器代码。
-  - SASS (NVIDIA GPU Assembly): 这是低级别的汇编语言，直接对应 GPU 执行的底层机器码。从 PTX 编译而来，是 NVIDIA GPU 真正执行的指令。
+  - [[id:f6a51658-96d0-4c9a-96e4-fc0648307221][PTX]]
+  - [[id:8f04cdbc-7692-4d46-9dd7-56fa9c59b06a][SASS]]
 + AMD
   - GCN (Graphics Core Next) Assembly: 这是 AMD 为其 GCN 架构 GPU 设计的汇编语言。它类似于 NVIDIA 的 PTX，作为一种中间表示。
   - PAL (Platform Abstraction Library) IL (Intermediate Language): AMD 使用的另一种中间语言。
@@ -73,3 +73,10 @@ A800/H800 是针对中国特供版（低配版），相对于 A100/H100，主要
 
 - 计算资源不充分：比如说某个 SM 上之后 4 个 SFU ，而一个 warp 有 32 个线程，那么显然需要 8 个 cycle 才能执行完，而不是 1 个 cycle 就可以执行完。
 - 条件分支（divergence）：也就是一部分线程走在 ~if~ 分支，而另外的部分走在 ~else~ 分支。
+
+* Roofline
+看到一个很不错的 Roofline 的图：
+
+[[file:img/clipboard-20250506T145107.png]]
+
+从图上可以看出，随着架构的发展，HBM 的带宽在增加，Tensor Core 的数目在增加，但是 CUDA Core 的数目在减少。

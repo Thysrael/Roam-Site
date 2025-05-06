@@ -1,0 +1,56 @@
+:PROPERTIES:
+:ID:       39f3a3db-f123-46ce-978d-2ce069ab3284
+:END:
+#+title: Wayland
+
+* Electron
+Electron 应用默认不开启 wayland ，所以需要在启动时加入如下参数：
+
+#+begin_src shell
+--ozone-platform=wayland --enable-wayland-ime
+#+end_src
+
+除了开启 wayland 外，上述命令还适配了 [[id:63b2a6df-87d0-4189-a609-3de09b0866b4][Fcitx5]] 输入法。
+
+* Emacs
+在 [[id:8210f9ca-154c-4102-b60e-64f4fa1c7773][ArchLinux]] 下安装 ~emacs-wayland~ 就可以使用 native wayland emacs 了，也就是编译时带了 ~--with-pgtk~ （pure GTK） 的 emacs 。
+
+但是不幸的是， KDE Wayland 并不支持 EAF ，所以还是需要使用 xwayland 运行 emacs ，如果强行运行，则会报错：
+
+#+begin_src shell
+dbus-call-method: D-Bus error: "org.freedesktop.DBus.Error.ServiceUnknown", "The name is not activatable"
+#+end_src
+
+但是如果在 xwayland 中运行 emacs ，会发现它无法复制中文字符到 wayland electron 中，所以还需要借助 ~xclip~ 。
+
+使用 xwayland emacs 会导致粘贴图片非常慢，我觉得不能忍受，所以就又切回了 X11 。
+
+从这个角度看，基本上就是 EAF 和 ~yank-media~ 不能两全啊。
+
+禁用 Emacs 使用系统输入法，可以通过环境变量设置：
+
+#+begin_src shell
+XMODIFIERS= GTK_IM_MODULE=xim QT_IM_MODULE=xim
+#+end_src
+
+也可以通过在 emacs 内部设置：
+
+#+begin_src emacs-lisp
+;; forbidden system im
+(setq pgtk-use-im-context-on-new-connection nil)
+#+end_src
+
+* Peek
+因为安全的原因，导致 GIF 录屏工具 peek 无法使用，但是我找到了 Kooha 作为代替。
+
+* Performance
+我在网上看测评，似乎并没有说 wayland 的性能要比 x11 要好。可能 wayland 的安全性导致了一定的性能开销。不过似乎 emacs 的启动速度确实快了一些。
+
+我觉得 Wayland 相比于 [[id:6c3e3ff3-6210-4cdc-93f2-2ed597065222][X11]] 的优势在于“它没有停止开发，正在逐渐称为主流”，其次才是流畅和安全等因素。
+
+* WPS
+wps 需要加入环境变量来保证输入法的正确使用：
+
+#+begin_src shell
+XMODIFIERS="@im=fcitx" GTK_IM_MODULE="fcitx" QT_IM_MODULE="fcitx" SDL_IM_MODULE=fcitx GLFW_IM_MODULE=ibus
+#+end_src

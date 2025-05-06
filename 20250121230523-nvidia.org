@@ -6,3 +6,5 @@
 - [[id:d3bd3bc2-91f2-4396-b1da-295c97c588e4][NCCL]]
 - [[id:c797e9f8-5a74-4757-9a52-eb2a0fc09209][cuBLAS]]
 - [[id:d7c0ca72-24b2-479c-90ea-225a25284752][CUDA]]
+- [[id:b09e2c4c-bfcc-47d4-b435-12949c267279][Triton]]
+- [[id:cdac6809-40af-47f8-b33d-3f24de9ce3a8][CUTLASS]]

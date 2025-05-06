@@ -26,3 +26,4 @@
 - LSP Server: [[id:640c3f1f-30ec-49dd-9644-e27756d43196][PYRight]]
 - 终端模拟器: [[id:d16de167-000c-415c-984a-9f04654a1733][Kitty]], [[id:39bd1249-bef4-4725-bc08-eb84322f858c][Konsole]]
 - 办公工具：[[id:74045156-930a-4ac9-87b1-65b7dcd76011][Office]]
+- 图形协议：[[id:39f3a3db-f123-46ce-978d-2ce069ab3284][Wayland]], [[id:6c3e3ff3-6210-4cdc-93f2-2ed597065222][X11]]

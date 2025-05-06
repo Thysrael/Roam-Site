@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       b09e2c4c-bfcc-47d4-b435-12949c267279
+:END:
+#+title: Triton
+
+Triton 是由 [[id:5a2dcfa0-cd04-44d1-b1b5-e6b62b12c27d][OpenAI]] 开发的 *开源编译器和运行时库* 。
+
+Triton 不依赖 [[id:d7c0ca72-24b2-479c-90ea-225a25284752][CUDA]] Runtime 库（如 =libcudart.so= ），直接通过 LLVM 生成 [[id:f6a51658-96d0-4c9a-96e4-fc0648307221][PTX]] 代码，绕过了 CUDA Runtime 的限制。但是 Triton 依赖 CUDA 驱动层​（如 =libcuda.so= ）来管理 GPU 设备、内存分配和内核启动。
