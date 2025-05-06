@@ -12,7 +12,6 @@
 - [[id:e424f62d-8e62-4e91-86b3-0ca2f615ab4c][Story]]
 - [[id:a64a206b-3db3-4401-bce3-54ed5bc5ab2b][Work]]
 - [[id:a9f007fa-a472-403b-b628-627eea16d3b6][Study]]
-- [[id:fe4fc452-1f5d-40de-9feb-77e1f6ada152][Dear AJ]]
 
 #+DOWNLOADED: screenshot @ 2024-03-16 20:05:18
 [[file:img/2024-03-16_20-05-18_screenshot.png]]
