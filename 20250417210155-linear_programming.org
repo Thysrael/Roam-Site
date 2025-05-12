@@ -27,4 +27,6 @@ Ax \leq b
 x \geq 0
 $$
 
-为了将普通 PL 转换成 Standard PL ，需要进行如下转化：
+为了将普通 PL 转换成 Standard PL ，需要进行转化：
+
+懒得写了，参考 [[https://www.cnblogs.com/sinkinben/p/14776297.html][这里]] 。
