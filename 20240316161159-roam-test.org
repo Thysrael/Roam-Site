@@ -26,7 +26,7 @@ This is ~org-roam-ui~ rendering test.
 
 * Math
 
-\(\LaTeX \lambda \)
+\( \LaTeX \lambda \)
 
 * Code
 

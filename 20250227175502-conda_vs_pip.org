@@ -90,6 +90,18 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 #+end_src
 
+在使用完环境如果想保留环境，可以使用如下命令：
+
+#+begin_src shell
+pip freeze > requirements.txt
+#+end_src
+
+等到他人使用的时候，可以运行如下命令恢复环境：
+
+#+begin_src shell
+pip install -r requirements.txt
+#+end_src
+
 * Python Version
 除了软件包以外，python 的版本也很重要。特定版本的 python 下可以运行的软件包，可能切换成了另一个版本的 python 上就行不通了。
 

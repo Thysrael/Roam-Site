@@ -10,5 +10,6 @@
 * Components
 - [[id:7a8dce7d-cff7-4232-b7b1-1311e4e08822][Tokenizer]]
 - [[id:f87f113d-5b9d-439c-ab10-fbccbfa48da6][KV Cache]]
+- [[id:1c2050df-2e36-4e5c-be08-6f2e24b06d81][ROPE]]
 
 * Model Family
