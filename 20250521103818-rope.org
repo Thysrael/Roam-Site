@@ -9,7 +9,7 @@
 \begin{align}
 q_{m} = W_{q} \cdot (x_{m} + PE(m)) \\
 k_{m} = W_{k} \cdot (x_{m} + PE(m)) \\
-PE(m) = [ \sin(\frac{i}{10000^{\frac{0}{d}}}), \cos(\frac{i}{10000^{\frac{0}{d}}}), \sin(\frac{i}{10000^{\frac{2}{d}}}), \cos(\frac{i}{10000^{\frac{2}{d}}}), \cdots , \sin(\frac{i}{10000^{\frac{d}{d}}}), \cos(\frac{i}{10000^{\frac{d}{d}}}) ]
+PE(m) = [ \sin(\frac{i}{10000^{\frac{0}{d}}}), \cos(\frac{i}{10000^{\frac{0}{d}}}), \sin(\frac{i}{10000^{\frac{2}{d}}}), \cos(\frac{i}{10000^{\frac{2}{d}}}), \cdots , \sin(\frac{i}{10000^{\frac{d}{d}}}), \cos(\frac{i}{10000^{\frac{d}{d}}}) ] \\
 \end{align}
 
 其中 $m$ 是 token id 或者说 position id ， $d$ 是模型维度（也就是 $x$ 的维度）。
@@ -30,7 +30,7 @@ R_m = \bigoplus_{i=0}^{d/2-1} \begin{pmatrix}
 \cos(m\theta_i) & -\sin(m\theta_i) \\
 \sin(m\theta_i) & \cos(m\theta_i)
 \end{pmatrix} \\
-\theta_i = 10000^{-2i/d} \quad (i = 0,1)
+\theta_i = 10000^{-2i/d} \quad (i = 0,1) \\
 \end{align}
 
 可以看出用这种方法，位置编码变得更有规律，是的 LLM 学习起来更轻松，长文本的拓展性更好。
