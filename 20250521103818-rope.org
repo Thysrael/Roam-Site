@@ -30,7 +30,7 @@ R_m = \bigoplus_{i=0}^{d/2-1} \begin{pmatrix}
 \cos(m\theta_i) & -\sin(m\theta_i) \\
 \sin(m\theta_i) & \cos(m\theta_i)
 \end{pmatrix} \\
-\theta_i = 10000^{-2i/d} \quad (i = 0,1) \\
+\theta_i = 10000^{-2i/d} \\
 \end{align}
 
 可以看出用这种方法，位置编码变得更有规律，是的 LLM 学习起来更轻松，长文本的拓展性更好。
