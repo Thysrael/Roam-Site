@@ -33,7 +33,7 @@ Agent 是为赋予 LLM 操纵工具的能力而设计的。它运行在 local �
 * MCP
 而 Agent-Tools 侧，Agent 存在一个“掌握 Tools 信息”的过程。而这个过程如果缺少标准化，那么就会导致 Agent 和 Tools 的开发量都会很大（又从 M + N 问题变成了 M \times N 的问题）。
 
-MCP(Model Context Protocol) 就是解决这个问题的，它规定了 Agent-Tools 的通信协议，它称 Tools 为 MCP Server ，称 Agent 为 MCP Client 。两者的通信可以通过 ~stdio~ ，也可以通过 ~HTTP~ ：
+MCP(Model Context Protocol) 就是解决这个问题的，它规定了 Agent-Tools 的通信协议，它称 Tools 为 MCP Server（从图上可以看出，并不只有 Tools, 还包括 Resources 和 Prompt），称 Agent 为 MCP Client 。两者的通信可以通过 ~stdio~ ，也可以通过 ~HTTP~ ：
 
 [[file:img/clipboard-20250530T161814.png]]
 
