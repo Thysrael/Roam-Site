@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       24792a0b-8aaf-41b0-b088-2508a6de415c
+:END:
+#+title: BERT
+
+BERT（Bidirectional Encoder Representations from Transformers）是由 [[id:dd934449-c0ff-40ec-996a-ad96f8880f84][Google]] 在 2018 年发布的一种自然语言处理（NLP）模型。所以它是早于 [[id:87c96bbe-d7f7-4508-82aa-c81d7b169580][GPT]] 的。
+
+BERT 是 Encoder-Only 的，所以不擅长生成，而擅长分析。

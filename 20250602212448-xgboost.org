@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       25efc541-b981-4744-84d9-50334aef7396
+:END:
+#+title: XGBoost
+
+XGBoost 结构与 [[id:75cccbb4-3fbd-427b-b47f-081af44110c3][GBDT]] 一样，主要是有两点区别：
+
+- GBDT 是求了一阶导数，而 XGBoost 求了二阶导数
+- XGBoost 性能更好

@@ -7,6 +7,18 @@
 
 数学表达：
 
-\( h_t = \sigma(W_t h_t + W_x x_t + b)\)
+\[
+h_{t} = \sigma(W_{h} h_{t} + W_{x} x_{t} + b)
+\]
 
-例如：LSTM, GRU 。需要注意 [[id:853f9286-682b-463d-90f6-ff93a7bb8eb9][ResNet]] 并不是。
+相比于原本简单的 [[id:63ea08ba-bc6d-49f9-9193-ad3a18bb1d15][FFN]] ：
+
+\[
+h_{t} = \sigma(W_{x} x_{t} + b)
+\]
+
+或者更直观的表达，对于机器翻译等许多上下文存在依赖的任务，我们需要一个结构来存储（或者更形象一些，“记忆”）上下文信息，也就是 RNN 中的 $h_{t}$ 隐藏层。不过这种方式好像被 [[id:3f59ec45-2231-4567-ba48-fd28fbf9db7a][Transformer]] 打败了。如下图所示：
+
+[[file:img/clipboard-20250602T205314.png]]
+
+RNN 有很多改进，例如：[[id:d8cf85ee-a57b-456a-b5ee-555328605cf4][LSTM]], GRU 。需要注意 [[id:853f9286-682b-463d-90f6-ff93a7bb8eb9][ResNet]] 并不是。

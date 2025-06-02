@@ -13,6 +13,8 @@
 - [[id:1c2050df-2e36-4e5c-be08-6f2e24b06d81][ROPE]]
 
 * Model Family
+- [[id:24792a0b-8aaf-41b0-b088-2508a6de415c][BERT]]
+- [[id:87c96bbe-d7f7-4508-82aa-c81d7b169580][GPT]]
 
 * Misc
 - [[id:7061c4aa-1920-4ac3-808a-13a3a077d7b8][Agent]]

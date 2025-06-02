@@ -48,7 +48,7 @@ ML 的分类如下图所示：
 *** Unsupervisor Method
 无监督学习（在 90 年代发明）可以避免数据标注的成本。可以分为聚类（Clustering）、降维（Dimisionality Reduction）、关联规则学习（Association Rule Learning）三种。
 
-聚类是根据未知特征来划分对象，这是它与分类算法的区别。常用于市场细分、压缩图像（识别相似的颜色）、分析和标记新数据、检测异常行为。典型方法包括 K-Mean 、Mean-Shift 、DBSCAN 。
+聚类是根据未知特征来划分对象，这是它与分类算法的区别。常用于市场细分、压缩图像（识别相似的颜色）、分析和标记新数据、检测异常行为。典型方法包括 [[id:f6a86c8c-a454-4178-bfeb-807f3c38bae2][K-Means]] 、Mean-Shift 、DBSCAN 。
 
 降维指的是找到最核心的特征，舍弃那些不重要的特征。常用于推荐系统。典型方法包括主成分分析（PCA）、奇异值分解（SVD）、潜在狄利克雷分配（LDA）、潜在语义分析（LSA、pLSA、GLSA）。
 
@@ -66,8 +66,8 @@ Ensemble method 中文译名应该是“集成学习”。它通过组合多个�
 
 常见的 Ensemble 方法包括：
 
-- Bagging(Bootstrap Aggregating)：通过在原始数据集上采样多个子集来训练多个模型，然后将其预测结果进行平均（用于回归问题）或投票（用于分类问题）。
-- Boosting：逐步训练模型，每个新的模型尝试纠正前一个模型的错误，重点关注难以预测的训练样本。包括 AdaBoost、梯度提升（Gradient Boosting）、XGBoost、LightGBM 等。
+- Bagging(Bootstrap Aggregating)：通过在原始数据集上采样多个子集来训练多个模型，然后将其预测结果进行平均（用于回归问题）或投票（用于分类问题）。如 [[id:cc0540e5-1063-499e-8412-37ee44164484][随机森林]]。
+- Boosting：逐步训练模型，每个新的模型尝试纠正前一个模型的错误，重点关注难以预测的训练样本。包括 AdaBoost、[[id:75cccbb4-3fbd-427b-b47f-081af44110c3][GBDT]]、[[id:25efc541-b981-4744-84d9-50334aef7396][XGBoost]]、LightGBM 等。
 - Stacking：使用多个基础模型生成预测结果，然后用另一个模型（称为元模型）来组合这些预测，以生成最终预测。
 - Voting：将多个模型的预测结果进行投票，选择票数最多的类别作为最终预测。这可以是硬投票（直接投票）或软投票（基于概率的加权平均）。适用于分类问题。
 
@@ -96,4 +96,9 @@ DL 的典型模型如下：
 - [[id:853f9286-682b-463d-90f6-ff93a7bb8eb9][ResNet]]
 - [[id:f1e8a2c1-6283-4816-8532-7eea9c68c2b7][LLM]]
 - Autoencoders
-  
+- [[id:98b6c948-5380-48dd-8745-1fa2173bad84][GNN]]  
+
+** Generated Model
+又是不精确分类的一种结果，这种模型的目的是生成一些文本或者图像，比如 [[id:87c96bbe-d7f7-4508-82aa-c81d7b169580][GPT]] 就是一种生成模型：
+
+- [[id:80a8a619-4447-447f-b19f-3d3ceb227ee0][GAN]]
