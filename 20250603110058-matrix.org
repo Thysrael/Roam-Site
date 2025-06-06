@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       3343f005-fe5c-458d-9e73-74d40550f885
+:END:
+#+title: Matrix
+#+filetags: :root:
+
+这里收集着关于矩阵的一些直观理解。
