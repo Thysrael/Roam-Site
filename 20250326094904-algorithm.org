@@ -7,3 +7,4 @@
 - [[id:3e71741b-78bb-4fad-8bac-5e5f4e21e04b][Linear Programming]]
 - [[id:6f7d11c2-f2d5-4476-9987-4c92b878782e][Graph Theory]]
 - [[id:51f6fa3f-d93f-4455-908d-358355858c3f][Approximation Algorithm]]
+- [[id:43459c20-1166-4e74-b911-b577f3ce462e][Complexity Classes]]
