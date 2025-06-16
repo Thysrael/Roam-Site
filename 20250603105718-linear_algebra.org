@@ -4,3 +4,4 @@
 #+title: Linear Algebra
 
 - [[id:3343f005-fe5c-458d-9e73-74d40550f885][Matrix]]
+- [[id:55aa6284-77ad-481d-8e7e-fa3002ed0f9d][SVD]]
