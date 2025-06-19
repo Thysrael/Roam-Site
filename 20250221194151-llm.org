@@ -18,3 +18,6 @@
 
 * Misc
 - [[id:7061c4aa-1920-4ac3-808a-13a3a077d7b8][Agent]]
+- [[id:fc305834-b1f1-4bd9-ace8-00de98ca801e][SP]]
+- [[id:543ed412-6826-45e8-b83e-740c142dce3f][FlashAttention]]
+- [[id:ef8bc66a-5a88-4687-b654-b9c3f79aea0d][TP]]

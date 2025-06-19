@@ -18,3 +18,7 @@
 * 分布式通信库
 - [[id:d3bd3bc2-91f2-4396-b1da-295c97c588e4][NCCL]]
 - [[id:2db6d989-60a9-4afe-a719-92b5516568aa][GLOO]]
+
+* 大模型并行
+- [[id:fc305834-b1f1-4bd9-ace8-00de98ca801e][SP]]
+- [[id:ef8bc66a-5a88-4687-b654-b9c3f79aea0d][TP]]

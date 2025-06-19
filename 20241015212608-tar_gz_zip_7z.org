@@ -17,7 +17,6 @@
 tar czvf archive_name.tar.gz file1 file2 directory/
 #+end_src
 
-
 使用如下命令进行解压缩：
 
 #+begin_src shell
