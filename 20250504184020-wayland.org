@@ -12,7 +12,7 @@ Electron 应用默认不开启 wayland ，所以需要在启动时加入如下�
 
 除了开启 wayland 外，上述命令还适配了 [[id:63b2a6df-87d0-4189-a609-3de09b0866b4][Fcitx5]] 输入法。
 
-不知道为什么在 chrome 上删除正在输入的问题会出现问题，但是其他 electron 应用中则没有。后来更新了一下，就没有这个问题了。
+不知道为什么在 chrome 上删除正在输入的问题会出现问题，但是其他 electron 应用中则没有。后来更新了一下，就没有这个问题了。这个问题似乎被解决了。
 
 * Emacs
 在 [[id:8210f9ca-154c-4102-b60e-64f4fa1c7773][ArchLinux]] 下安装 ~emacs-wayland~ 就可以使用 native wayland emacs 了，也就是编译时带了 ~--with-pgtk~ （pure GTK） 的 emacs 。
