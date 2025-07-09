@@ -137,3 +137,11 @@ ssh -R [remote_port]:[destination_address]:[local_port] [username]@[ssh_server]
 #+begin_src shell
 ssh -D [local_port] [username]@[ssh_server]
 #+end_src
+
+* Server 限制密码登录
+在 =/etc/ssh/sshd_config= 中增加如下配置即可：
+
+#+begin_src conf
+PasswordAuthentication no
+AuthenticationMethods publickey
+#+end_src
