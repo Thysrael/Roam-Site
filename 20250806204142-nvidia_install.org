@@ -1,0 +1,45 @@
+:PROPERTIES:
+:ID:       af392a11-c207-4da3-96c4-d92504529699
+:END:
+#+title: NVIDIA Install
+
+在 [[id:8e3d5527-8c90-4c7b-a0ea-34d6b2e8ed3d][Ubuntu]] 上，使用如下命令进行相关环境的配置：
+
+首先，需要先安装 NVIDIA 的驱动，使用如下命令，参考 [[https://documentation.ubuntu.com/server/how-to/graphics/install-nvidia-drivers/][这里]] ：
+
+#+begin_src shell
+# list the availabe drivers
+sudo ubuntu-drivers list
+# choose the default drivers to install
+sudo ubuntu-drivers install --gpgpu
+# install 
+sudo apt install nvidia-utils-550-server
+# need reboot 
+reboot
+#+end_src
+
+此时使用如下命令即可查看是否成功：
+
+#+begin_src shell
+nvidia-smi
+#+end_src
+
+需要注意的是，此时打印的 ~CUDA VERSION~ 并不意味着真的安装了 CUDA ，而只是说明了当前 driver 支持的 CUDA 的最高版本。
+
+也可以使用如下命令来查看已经安装的 driver 的信息：
+
+#+begin_src shell
+cat /proc/driver/nvidia/version
+#+end_src
+
+然后安装 cuda ，使用如下命令来直接安装最新的 CUDA ：
+
+#+begin_src shell
+sudo apt install nvidia-cuda-toolkit
+#+end_src
+
+在安装结束后，使用如下命令来查看 CUDA 的版本：
+
+#+begin_src shell
+nvcc --version
+#+end_src

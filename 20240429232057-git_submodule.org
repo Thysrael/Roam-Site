@@ -3,7 +3,13 @@
 :END:
 #+title: Git Submodule
 
-* 添加一个 local 已有仓库为 submodule
+* 增加一个 submodule 
+命令与 ~git clone~ 是类似的，如下所示：
+
+#+begin_src shell
+git submodule add <remote.git> <local path>
+#+end_src
+
 即使是已有 local 仓库，也必须使用 ~url~ 完成，如下所示：
 
 #+begin_src shell
@@ -21,4 +27,13 @@ git clone --recursive <remote.git>
 
 #+begin_src shell
 git submodule update --init
+#+end_src
+
+* 删除 submodule 
+除了需要在工作目录下删除，同时对于 git 本身也需要进行一些内容的删除：
+
+#+begin_src shell
+rm -rf <local path> # delete from work directory
+rm -rf .git/modules/<local path> # delete in .git/
+git config -f .gitmodules --remove-section submodule.<local path> # delete in .gitmodules
 #+end_src

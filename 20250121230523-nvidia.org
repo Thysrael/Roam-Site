@@ -8,3 +8,4 @@
 - [[id:d7c0ca72-24b2-479c-90ea-225a25284752][CUDA]]
 - [[id:b09e2c4c-bfcc-47d4-b435-12949c267279][Triton]]
 - [[id:cdac6809-40af-47f8-b33d-3f24de9ce3a8][CUTLASS]]
+- [[id:af392a11-c207-4da3-96c4-d92504529699][NVIDIA Install]]
