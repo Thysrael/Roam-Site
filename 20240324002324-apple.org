@@ -3,4 +3,5 @@
 :END:
 #+title: Apple
 
-[[https://jia.je/hardware/2023/10/31/apple-silicon/][Apple 处理器型号总结]]
+- [[https://jia.je/hardware/2023/10/31/apple-silicon/][Apple 处理器型号总结]]
+- [[id:5f5f6d3d-3ca0-4283-a970-1499de8b1644][MacOS]]
