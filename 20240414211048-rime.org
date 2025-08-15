@@ -32,6 +32,8 @@ patch:
         page_size: 8
 #+end_src
 
+其他的配置选项可以查阅 [[https://github.com/rime/home/wiki/CustomizationGuide][Github Wiki]] 。
+
 * 词库
 词库是是非常重要的，但是我也不太懂，我只知道有些词库很大，会影响 Rime 的启动速率，可以适当禁用来提高启动速率。
 

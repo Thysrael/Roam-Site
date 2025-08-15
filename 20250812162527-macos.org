@@ -3,3 +3,14 @@
 :END:
 #+title: MacOS
 
+* DS_store
+#+begin_src shell
+# 禁用本地存储生成（慎用）
+defaults write com.apple.desktopservices DSDontWriteLocalStores -bool true
+
+# 禁用网络存储生成（推荐）
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+# 禁用外接存储生成（如U盘）
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+#+end_src
