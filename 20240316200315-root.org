@@ -21,3 +21,5 @@ Can you hear me?
 
 Call me /ROOT/!
 #+end_quote
+
+From Mac.
